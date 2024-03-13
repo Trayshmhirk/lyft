@@ -1,7 +1,5 @@
 const Line = () => {
-   return (
-      <div className='line h-100'></div>
-   )
-}
+   return <div className="line h-full"></div>;
+};
 
-export default Line
+export default Line;

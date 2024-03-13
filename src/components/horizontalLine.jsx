@@ -1,7 +1,5 @@
 const HorizontalLine = () => {
-   return (
-      <div className='horizontal-line w-100'></div>
-   )
-}
+   return <div className="horizontal-line w-full"></div>;
+};
 
-export default HorizontalLine
+export default HorizontalLine;

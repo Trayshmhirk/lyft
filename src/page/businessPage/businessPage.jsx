@@ -1,20 +1,18 @@
 // import React from 'react'
-import './businessPage.scss'
-import Header from "../../components/header/header"
-import Footer from "../../components/footer/footer"
-import CustomButton from "../../components/customButton/customButton"
-import { Link } from 'react-router-dom'
+import "./businessPage.scss";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import CustomButton from "../../components/customButton/customButton";
+import { Link } from "react-router-dom";
 
 const BusinessPage = () => {
-   const img1 = "https://images.ctfassets.net/7qj0pq66qmy0/4OhYWRomjdbEereillakVN/984a2da7ad2be76ceb42ebd39d77ccd1/Homepage_hero_458x397.png?w=2500&q=60&fm="
+   const img1 =
+      "https://images.ctfassets.net/7qj0pq66qmy0/4OhYWRomjdbEereillakVN/984a2da7ad2be76ceb42ebd39d77ccd1/Homepage_hero_458x397.png?w=2500&q=60&fm=";
    return (
       <div className="business">
-         <Header 
-            isRider
-            isBusiness
-         />
-         <nav className='business-sub-pages d'>
-            <div className='nav-container h-100 d-flex gap-4 align-items-center'>
+         <Header isRider isBusiness />
+         <nav className="business-sub-pages d">
+            <div className="nav-container h-100 flex gap-4 items-center">
                <Link>Products</Link>
                <Link>Solutions</Link>
                <Link>Customers</Link>
@@ -22,54 +20,63 @@ const BusinessPage = () => {
                <Link>Contact us</Link>
                <Link>Get started</Link>
             </div>
-
          </nav>
 
          <main>
-            <section className="first-section d-flex justify-content-center">
-               <div className="section-container d-flex justify-content-between">
-                  <div className='hero w-100 d-flex flex-column align-items-start justify-content-center gap-4'>
-                     <h1 className='mb-3'>Drive your business with access to reliable rides</h1>
-                     <p>{"Take care of transportation for the people who matter to your business. Create a free Trip Business account for your organization and start moving your people today."}</p>
+            <section className="first-section flex justify-center">
+               <div className="section-container flex justify-between">
+                  <div className="hero w-100 flex flex-col items-start justify-center gap-4">
+                     <h1 className="mb-3">
+                        Drive your business with access to reliable rides
+                     </h1>
+                     <p>
+                        {
+                           "Take care of transportation for the people who matter to your business. Create a free Trip Business account for your organization and start moving your people today."
+                        }
+                     </p>
 
-                     <div className='w-75 d-flex align-items-center gap-4'>
-                        <input 
-                           className=''
-                           placeholder='Enter work email address*'
+                     <div className="w-75 flex items-center gap-4">
+                        <input
+                           className=""
+                           placeholder="Enter work email address*"
                         />
-                        <div className=''>
-                           <CustomButton isPurpleBtn>Create account</CustomButton>
+                        <div className="">
+                           <CustomButton isPurpleBtn>
+                              Create account
+                           </CustomButton>
                         </div>
                      </div>
-                     <strong className='mt-4'>Already using Trip business? <Link>Sign in here »</Link></strong>
+                     <strong className="mt-4">
+                        Already using Trip business? <Link>Sign in here »</Link>
+                     </strong>
                   </div>
 
-                  <div className='image-container'>
+                  <div className="image-container">
                      <img src={img1} />
                   </div>
                </div>
             </section>
 
-            {/* <section className="second-section d-flex justify-content-center">
-               <div className="section-container d-flex flex-column gap-4">
+            {/* <section className="second-section flex justify-center">
+               <div className="section-container flex flex-col gap-4">
                   <h3>Benefits for you</h3>
 
-                  <div className='d-flex justify-content-between'>
-                     <div className='benefits d-flex flex-column gap-4'>
+                  <div className='flex justify-between'>
+                     <div className='benefits flex flex-col gap-4'>
                         <div className='image-circle'>
                            <img src='' />
                         </div>
                         <h2>Earn rewards</h2>
                         <p>Earn hotel and airline rewards by linking your Alaska Mileage Plan™, Delta SkyMiles®, or Hilton Honors account.</p>
                      </div>
-                     <div className='benefits d-flex flex-column gap-4'>
+                     <div className='benefits flex flex-col gap-4'>
                         <div className='image-circle'>
                            <img src='' />
                         </div>
                         <h2>Manage expenses</h2>
                         <p>Automatically forward receipts to Concur, Expensify and more — no more paperwork or manual uploads.</p>
                      </div>
-                     <div className='benefits d-flex flex-column gap-4'>
+                     <div className='benefits flex flex-col gap-4'>
                         <div className='image-circle'>
                            <img src='' />
                         </div>
@@ -80,11 +87,11 @@ const BusinessPage = () => {
                </div>
             </section>
 
-            <section className="third-section d-flex justify-content-center">
-               <div className="section-container w-100 d-flex justify-content-between">
+            <section className="third-section flex justify-center">
+               <div className="section-container w-100 flex justify-between">
                   
 
-                  <div className='d-flex flex-column justify-content-center'>
+                  <div className='flex flex-col justify-center'>
                      <h2 className='fw-semibold'>
                         How to set up your business profile
                      </h2>
@@ -108,11 +115,11 @@ const BusinessPage = () => {
                </div>
             </section>
 
-            <section className="fourth-section d-flex justify-content-center">
-               <div className="section-container w-100 d-flex flex-column gap-5">
+            <section className="fourth-section flex justify-center">
+               <div className="section-container w-100 flex flex-col gap-5">
                   <h3>Smoother in business travel from beginning to end</h3>
 
-                  <div className='d-flex align-items-center justify-content-between gap-5'>
+                  <div className='flex items-center justify-between gap-5'>
                      <div className='w-50'>
                         
                      </div>
@@ -123,7 +130,7 @@ const BusinessPage = () => {
                         </p>
                      </div>
                   </div>
-                  <div className='d-flex align-items-center justify-content-between gap-5'>
+                  <div className='flex items-center justify-between gap-5'>
                      <div className='w-50'>
                         <h2>Scheduled rides</h2>
                         <p>
@@ -134,7 +141,7 @@ const BusinessPage = () => {
                         
                      </div>
                   </div>
-                  <div className='d-flex align-items-center justify-content-between gap-5'>
+                  <div className='flex items-center justify-between gap-5'>
                   <div className='w-50'>
                         
                      </div>
@@ -148,26 +155,29 @@ const BusinessPage = () => {
                </div>
             </section> */}
 
-            <section className="last-section d-flex justify-content-center">
-               <div className='section-container align-self-center d-flex align-items-center gap-4'>
-                  <div className='w-50 d-flex flex-column align-items-start justify-content-center gap-4'>
-                     <h2 className=''>Take care of your people and your transportation needs</h2>
-                     <p>{"Set up a Trip Business account for you organization and get started today"}</p>
+            <section className="last-section flex justify-center">
+               <div className="section-container self-center flex items-center gap-4">
+                  <div className="w-50 flex flex-col items-start justify-center gap-4">
+                     <h2 className="">
+                        Take care of your people and your transportation needs
+                     </h2>
+                     <p>
+                        {
+                           "Set up a Trip Business account for you organization and get started today"
+                        }
+                     </p>
 
                      <CustomButton isPurpleBtn>Create account</CustomButton>
                   </div>
 
-                  <div className='w-50'>
-                     {/* <img src={img6} /> */}
-                  </div>
+                  <div className="w-50">{/* <img src={img6} /> */}</div>
                </div>
             </section>
-
          </main>
 
          <Footer />
       </div>
-   )
-}
+   );
+};
 
-export default BusinessPage
+export default BusinessPage;

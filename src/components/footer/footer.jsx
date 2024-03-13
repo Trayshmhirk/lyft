@@ -21,17 +21,15 @@ const Footer = ({ isMobileView }) => {
    };
 
    return (
-      <footer className="d-flex justify-content-center">
+      <footer className="flex justify-center">
          <div
-            className={`footer-container d-flex flex-column ${isMobileView ? "gap-4" : "mt-3 gap-2"} `}
+            className={`footer-container flex flex-col ${isMobileView ? "gap-4" : "mt-3 gap-2"} `}
          >
-            <div
-               className={`d-flex ${isMobileView ? "flex-column" : ""} gap-2`}
-            >
-               <ul className="d-flex flex-column gap-2">
+            <div className={`flex ${isMobileView ? "flex-col" : ""} gap-2`}>
+               <ul className="flex flex-col gap-2">
                   <p
                      onClick={toggleDriverDropdown}
-                     className={`${isMobileView ? "d-flex justify-content-between align-items-center" : ""} py-3 fs-6 fw-semibold`}
+                     className={`${isMobileView ? "flex justify-between items-center" : ""} py-3 fs-6 font-semibold`}
                   >
                      Driver
                      {isMobileView && (
@@ -84,10 +82,10 @@ const Footer = ({ isMobileView }) => {
                      </>
                   )}
                </ul>
-               <ul className="d-flex flex-column gap-2">
+               <ul className="flex flex-col gap-2">
                   <p
                      onClick={toggleRiderDropdown}
-                     className={`${isMobileView ? "d-flex justify-content-between align-items-center" : ""} py-3 fs-6 fw-semibold`}
+                     className={`${isMobileView ? "flex justify-between items-center" : ""} py-3 fs-6 font-semibold`}
                   >
                      Rider
                      {isMobileView && (
@@ -136,10 +134,10 @@ const Footer = ({ isMobileView }) => {
                      </>
                   )}
                </ul>
-               <ul className="d-flex flex-column gap-2">
+               <ul className="flex flex-col gap-2">
                   <p
                      onClick={toggleLyftDropdown}
-                     className={`${isMobileView ? "d-flex justify-content-between align-items-center" : ""} py-3 fs-6 fw-semibold`}
+                     className={`${isMobileView ? "flex justify-between items-center" : ""} py-3 fs-6 font-semibold`}
                   >
                      Lyft
                      {isMobileView && (
@@ -190,17 +188,15 @@ const Footer = ({ isMobileView }) => {
                   )}
                </ul>
                <ul
-                  className={`d-flex flex-column ${isMobileView ? "w-100 align-items-center" : "align-items-start"}  gap-3`}
+                  className={`flex flex-col ${isMobileView ? "w-full items-center" : "items-start"}  gap-3`}
                >
                   <CustomButton isWhiteBtn>Lyft driver app</CustomButton>
                   <CustomButton isWhiteBtn>Lyft rider app</CustomButton>
                </ul>
             </div>
 
-            <div className="socials-and-terms w-100 d-flex justify-content-end gap-3">
-               <div
-                  className={`d-flex ${isMobileView ? "flex-wrap" : ""} gap-3`}
-               >
+            <div className="socials-and-terms w-full flex justify-end gap-3">
+               <div className={`flex ${isMobileView ? "flex-wrap" : ""} gap-3`}>
                   <Link>Terms</Link>
                   <Link>Privacy</Link>
                   <Link>Accessibility statement</Link>

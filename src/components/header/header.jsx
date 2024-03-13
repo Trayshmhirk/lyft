@@ -15,22 +15,22 @@ const Header = ({
    isMobileView,
 }) => {
    return (
-      <header className="w-100 d-flex justify-content-center">
-         <div className="header-container d-flex justify-content-between align-items-center gap-5">
-            <span className=" w-100 lyft-logo fs-1 fw-bold">
+      <header className="w-100 flex justify-center">
+         <div className="header-container flex justify-between items-center gap-5">
+            <span className=" w-100 lyft-logo fs-1 font-bold">
                Lyft {isBusiness && "business"}
             </span>
 
             <nav
                className={`
-                  main-nav w-100 h-100 d-flex
-                  ${isDriver ? "" : "justify-content-end"} 
+                  main-nav w-100 h-100 flex
+                  ${isDriver ? "" : "justify-end"} 
                `}
             >
                <div
                   className={`
-                     d-flex gap-4 align-items-center
-                     ${isDriver ? "w-100 justify-content-end" : ""}
+                   flex gap-4 items-center
+                     ${isDriver ? "w-100 justify-end" : ""}
                   `}
                >
                   {isHome && (
@@ -43,10 +43,10 @@ const Header = ({
                         </span>
                      </>
                   ) : (
-                     <div className="links-container d-flex w-100 h-100 align-items-center">
+                     <div className="links-container flex w-100 h-100 items-center">
                         <Line />
                         {isDriver ? (
-                           <div className="sub-links-container d-flex align-items-center h-100 w-100">
+                           <div className="sub-links-container flex items-center h-100 w-100">
                               <Link className="nav-links" to="/driver">
                                  DRIVER
                               </Link>
@@ -80,7 +80,7 @@ const Header = ({
                         <Line />
                         {isRider ? (
                            <div
-                              className={`sub-links-container ${isBusiness ? "business-width" : "link-width"}  d-flex align-items-center h-100`}
+                              className={`sub-links-container ${isBusiness ? "business-width" : "link-width"}  flex items-center h-100`}
                            >
                               <Link className="nav-links" to="/rider">
                                  RIDER

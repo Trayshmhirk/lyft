@@ -1,12 +1,12 @@
 // import React from 'react'
-import './customButton.scss'
+import "./customButton.scss";
 
-const CustomButton = ({children, isWhiteBtn, isPurpleBtn, isNoBorderBtn}) => {
+const CustomButton = ({ children, isWhiteBtn, isPurpleBtn, isNoBorderBtn }) => {
    const buttonClassName = `
-      custom-btn fs-6 fw-medium
-      ${isWhiteBtn ? 'white-btn' : ''}
-      ${isPurpleBtn ? 'purple-btn' : ''}
-      ${isNoBorderBtn ? 'no-border-btn' : ''}
+      custom-btn fs-6 font-medium
+      ${isWhiteBtn ? "white-btn" : ""}
+      ${isPurpleBtn ? "purple-btn" : ""}
+      ${isNoBorderBtn ? "no-border-btn" : ""}
    `;
 
    return (
@@ -17,6 +17,6 @@ const CustomButton = ({children, isWhiteBtn, isPurpleBtn, isNoBorderBtn}) => {
          {children}
       </button>
    );
-}
+};
 
 export default CustomButton;
