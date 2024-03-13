@@ -1,0 +1,462 @@
+.head-two{
+   font-size: 46px;
+   font-weight: 500;
+   word-wrap: break-word;
+}
+
+
+@media(max-width: 1270px){
+   .head-two{
+       font-size: 30px;
+   }
+}
+
+
+.lyft-logo{
+   color: #ff00bf;
+}
+
+.lyft-logo:hover{
+   color: #000;
+}
+
+@media(max-width: 610px){
+   .lyft-logo{
+      font-size: 60px;
+   }
+}
+
+
+
+
+.mobile-nav-container{
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: white;
+   height: 100%;
+   width: 100%;
+   border: 2px solid red;
+   padding: 5px 10px;
+}
+
+.mobile-nav-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+
+.btn-log-and-x{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    /* border: 2px solid green; */
+}
+
+.the-x-btn{
+    font-size: 50px;
+}
+
+
+/*  */
+
+section {
+   padding: 70px 80px;
+
+   .section-container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 0px 60px;
+   }
+
+   .hero {
+      width: 40%;
+
+      h1{
+         font-size: 80px;
+      }
+   }
+
+   h2 {
+      font-size: 36px;
+   }
+
+   .subject-terms{
+      font-size: 14px;
+   }  
+
+   .info-text  {
+      font-size: 12px;
+   }
+   
+   &.first-section {
+      .first-section-container {
+         max-width: 1200px;
+         width: 100%;
+      }
+
+      .first-section-img {
+         width: 60%;
+   
+         img {
+            height: 400px;
+         }
+      }
+
+      @media screen and (max-width: 1024px) {
+         .first-section-img {
+            width: 100%;
+
+            img {
+               height: unset;
+            }
+         }
+      }
+   }
+
+   &.second-section {
+      background-color: #f4f4fa;
+      position: relative;
+   
+      .section-info {
+         width: 45%;
+      }
+
+      .image-container{
+         width: 47%;
+      
+         img{
+            height: 450px;
+         }
+      }
+
+      @media screen and (max-width: 1024px) {
+         .section-info {
+            width: 50%;
+
+            span.fs-6, h2 {
+               text-align: center;
+            }
+         }
+   
+         .image-container {
+            width: 33.3%;
+            
+            img {
+               width: 100%;
+               height: unset;
+            }
+         }
+      }
+
+      // @media screen and (max-width: 768px) {
+         
+      //    .section-info {
+      //       width: 80%;
+      //    }
+   
+      //    .image-container {
+      //       width: 100%;
+      //       display: flex;
+      //       justify-content: center;
+            
+      //       img {
+      //          max-width: 600px;
+      //          width: 100%;
+      //          height: unset;
+      //       }
+      //    }
+      // }
+   }
+
+   &.third-section {
+      background-color: #fff;
+      position: relative;
+   
+      .section-info {
+         width: 45%;
+      }
+
+      .image-container{
+         width: 47%;
+      
+         img{
+            width: 80%;
+         }
+      } 
+      
+      @media screen and (max-width: 1024px) {
+         .section-info {
+            width: 50%;
+
+            span.fs-6, h2 {
+               text-align: center;
+            }
+         }
+   
+         .image-container {
+            width: 40%;
+            
+            img {
+               width: 100%;
+               height: unset;
+            }
+         }
+
+         .slider-heading {
+            text-align: center;
+         }
+      }
+
+      // @media screen and (max-width: 768px) {
+      //    .reverse {
+      //       flex-direction: column-reverse !important;
+      //    }
+      // }
+   }
+   
+   &.fourth-section {
+      background-color: #F4F4FA;
+      position: relative;
+         
+      .section-info {
+         width: 45%;
+         
+      }
+
+      .image-container{
+         width: 47%;
+      
+         img{
+            width: 80%;
+         }
+      }
+
+      @media screen and (max-width: 1024px) {
+         .section-info {
+            width: 50%;
+         }
+   
+         .image-container {
+            width: 40%;
+            
+            img {
+               width: 100%;
+               height: unset;
+            }
+         }
+      }
+
+   }
+
+   &.fifth-section {
+      background-color: #fff;
+      position: relative;
+   
+      .section-info {
+         width: 45%;
+      }
+
+      .image-container{
+         width: 47%;
+      
+         img{
+            width: 80%;
+         }
+      } 
+      
+      @media screen and (max-width: 1024px) {
+         .section-info {
+            width: 53%;
+         }
+   
+         .image-container {
+            width: 40%;
+            
+            img {
+               width: 100%;
+               height: unset;
+            }
+         }
+      }
+   }
+
+   &.sixth-section {
+      background-color: #fff;
+      position: relative;
+   
+      .section-info {
+         width: 45%;
+      }
+
+      .image-container{
+         width: 47%;
+      
+         img{
+            width: 80%;
+         }
+      }     
+   }
+   
+   &.last-section {
+      background-color: #F4F4FA;
+      box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.089);
+      position: relative;
+
+      img.lyft-business {
+         height: 26px;
+         width: 150px;
+      }
+
+      .section-info {
+         width: 45%;
+      }
+
+      .image-container{
+         width: 47%;
+      
+         img{
+            width: 80%;
+         }
+      }  
+   
+      p {
+         max-width: 750px;
+      } 
+      
+      @media screen and (max-width: 768px) {
+         box-shadow: none;
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      padding: 60px 25px;
+
+      .section-container {
+         padding: 0px 60px;
+      }
+
+      .hero {
+         width: 100%;
+         align-items: center;
+   
+         h1{
+            font-size: 60px;
+         }
+      }
+   }
+
+   @media screen and (max-width: 768px) {
+      .section-container {
+         padding: 0px;
+      }
+
+      .hero {
+         width: 100%;
+         align-items: center;
+   
+         h1{
+            font-size: 48px;
+         }
+      }
+
+      h2 {
+         font-size: 27px;
+      }
+
+      .reverse {
+         flex-direction: column-reverse !important;
+         gap: 40px !important;
+
+         .section-info {
+            width: 90%;
+         }
+   
+         .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            img {
+               max-width: 600px;
+               width: 100%;
+               height: unset;
+            }
+         }
+      }
+
+      .direction-column {
+         flex-direction: column !important;
+         gap: 50px !important;
+
+         h2 {
+            text-align: start !important;
+         }
+
+         .section-info {
+            width: 90%;
+         }
+   
+         .image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            img {
+               max-width: 600px;
+               width: 100%;
+               height: unset;
+            }
+         }
+      }
+   }
+
+   @media screen and (max-width: 375px) {
+      padding: 40px 25px;
+      
+   }
+}
+   
+
+footer {
+   padding: 40px 80px;
+   padding-bottom: 50px;
+   background: #FFF;
+
+   .footer-container {
+      max-width: 1200px;
+      width: 100%;
+      padding: 0px 60px;
+
+      ul {
+         width: calc(100% / 4);
+         color: #0C0B31;
+      }
+
+      .socials-and-terms {
+         font-size: 12px;
+      }      
+   }
+
+   @media screen and (max-width: 1024px) {
+      padding: 60px 25px;
+   }
+
+   @media screen and (max-width: 768px) {
+      padding: 30px 25px;
+
+      .footer-container {
+         padding: 0px;
+      }
+   }
+
+   @media screen and (max-width: 1024px) {
+      .footer-container {
+         ul {
+            width: 100%;
+         }
+      }
+   }
+}

@@ -1,0 +1,5 @@
+services:
+  - name: your-app-name
+    env: node
+    buildCommand: npm run build
+    startCommand: npm run start

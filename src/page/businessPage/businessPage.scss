@@ -1,0 +1,29 @@
+.business {
+   .business-sub-pages {
+      background-color: #F4F4F4;
+      height: 56px;
+      padding: 0px 80px;
+
+      .nav-container {
+         max-width: 1200px;
+         width: 100%;
+         padding: 0px 60px;
+      }
+   }
+
+   .first-section {
+      background-color: #DCDDFC;
+
+      input {
+         width: 62%;
+      }
+
+      .image-container {
+         width: 59%;
+
+         img {
+            width: 100%;
+         }
+      }
+   }
+}

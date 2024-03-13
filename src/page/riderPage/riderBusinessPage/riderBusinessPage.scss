@@ -1,0 +1,52 @@
+.rider-business {
+
+
+   .section-container {
+      width: 1200px;
+      padding: 0;
+
+      h3 {
+         font-style: 26px;
+      }
+
+      .image-circle {
+         width: 92px;
+         height: 92px;
+         border-radius: 50%;
+         background-color: #DCDCFF;
+      }
+   }
+
+
+   .first-section {
+      background-color: #e7f6ff;
+      
+      .section-container {
+         gap: 130px;
+      }
+   }
+
+   .second-section {
+      background-color: #fff;
+
+      .benefits {
+         width: calc(100% / 3.3);
+      }
+   }
+
+   .third-section {
+      background-color: #F5F5F5;
+
+      img {
+         width: 31%;
+      }
+   }
+
+   .fourth-section {
+      background-color: #fff;
+   }
+
+   .last-section {
+      background-color: #e7f6ff;
+   }
+}
