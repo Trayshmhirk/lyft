@@ -102,13 +102,18 @@ export const Car_blue_L =
 
 export const landingIllustration =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/landingIllustration.942bfaf7.svg";
+
 export const setUpBp =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/setUpBp.16e216b7.svg";
+
 export const calendarIntegration =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/calendarIntegration.2ae7e2d2.svg";
+
 export const scheduleRide =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/scheduleRide.7e2e7ccd.svg";
+
 export const preorderRide =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/preorderRide.729577d0.svg";
+
 export const takeCare =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/takeCare.384d02b1.svg";

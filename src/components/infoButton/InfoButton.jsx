@@ -1,4 +1,4 @@
-import CustomButton from "../customButton/customButton";
+import CustomButton from "../customButton";
 
 const InfoButton = ({ btnText, paraText, iconClass, isMobileView }) => {
    return (

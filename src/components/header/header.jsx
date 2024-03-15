@@ -1,6 +1,6 @@
 // import React from 'react'
 import "./header.scss";
-import CustomButton from "../customButton/customButton";
+import CustomButton from "../customButton";
 import Line from "../line";
 import { Link } from "react-router-dom";
 import ProfileIcon from "../../assets/business-profile-icon.png";
@@ -16,23 +16,23 @@ const Header = ({
    isRider,
 }) => {
    return (
-      <header className="w-100 h-20 flex justify-center px-20 border border-gainsboro">
+      <header className="w-full h-20 flex justify-center px-20 border border-gainsboro">
          <div className="header-container flex justify-between items-center gap-5">
-            <span className="lyft-logo text-[52px] font-bold">
+            <span className="text-[52px] font-bold text-shockingPink cursor-pointer hover:text-cetaceanBlue">
                <FontAwesomeIcon icon={faLyft} className="w-16" />{" "}
                {isBusiness && "business"}
             </span>
 
             <nav
                className={`
-                  main-nav w-100 h-100 flex
+                  main-nav w-full h-full flex
                   ${isDriver ? "" : "justify-end"} 
                `}
             >
                <div
                   className={`
                    flex gap-4 items-center
-                     ${isDriver ? "w-100 justify-end" : ""}
+                     ${isDriver ? "w-full justify-end" : ""}
                   `}
                >
                   {isHome && (
@@ -43,10 +43,10 @@ const Header = ({
                      <i className="fa-solid fa-bars"></i>
                   </span>
 
-                  <div className="hidden links-container w-100 h-100 items-center lg:flex">
+                  <div className="hidden links-container w-full h-full items-center lg:flex">
                      <Line />
                      {isDriver ? (
-                        <div className="sub-links-container flex items-center h-100 w-100">
+                        <div className="sub-links-container flex items-center h-full w-full">
                            <Link className="nav-links" to="/driver">
                               DRIVER
                            </Link>
@@ -80,7 +80,7 @@ const Header = ({
                      <Line />
                      {isRider ? (
                         <div
-                           className={`sub-links-container ${isBusiness ? "business-width" : "link-width"}  flex items-center h-100`}
+                           className={`sub-links-container ${isBusiness ? "business-width" : "link-width"}  flex items-center h-full`}
                         >
                            <Link className="nav-links" to="/rider">
                               RIDER

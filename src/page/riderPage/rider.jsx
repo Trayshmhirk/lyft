@@ -2,7 +2,7 @@
 import "./rider.scss";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
-import CustomButton from "../../components/customButton/customButton";
+import CustomButton from "../../components/customButton";
 import Line from "../../components/line";
 import { imageLinks } from "../../assets/imageLinks";
 import { Link } from "react-router-dom";

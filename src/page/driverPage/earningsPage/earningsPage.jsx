@@ -2,7 +2,7 @@
 import "./earningsPage.scss";
 import Header from "../../../components/header/header";
 import Footer from "../../../components/footer/footer";
-import CustomButton from "../../../components/customButton/customButton";
+import CustomButton from "../../../components/customButton";
 import { Link } from "react-router-dom";
 import HorizontalLine from "../../../components/horizontalLine";
 import Line from "../../../components/line";

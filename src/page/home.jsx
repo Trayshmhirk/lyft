@@ -2,7 +2,7 @@ import InfoList from "../components/infoList/InfoList";
 import Carousel from "../components/carousel/Carousel";
 import CardSlider from "../components/cardSlider/CardSlider";
 import InfoButton from "../components/infoButton/InfoButton";
-import CustomButton from "../components/customButton/customButton";
+import CustomButton from "../components/customButton";
 import { Link } from "react-router-dom";
 import { imageLinks } from "../assets/imageLinks";
 import useWindowWidth from "../components/hooks/useWindowWidth";

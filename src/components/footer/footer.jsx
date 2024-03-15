@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useState } from "react";
-import CustomButton from "../customButton/customButton";
+import CustomButton from "../customButton";
 import { Link } from "react-router-dom";
 
 const Footer = ({ isMobileView }) => {

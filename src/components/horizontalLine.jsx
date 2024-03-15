@@ -1,5 +1,5 @@
 const HorizontalLine = () => {
-   return <div className="horizontal-line w-full"></div>;
+   return <div className="h-[1px] bg-gainsboro m-0 w-full"></div>;
 };
 
 export default HorizontalLine;

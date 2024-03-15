@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+   body {
+      @apply text-cetaceanBlue;
+      scroll-behavior: smooth;
+   }
+
+   a {
+      @apply text-cetaceanBlue;
+   }
+
+   li {
+      list-style: none;
+   }
+
+   input {
+      @apply p-4 border border-gray rounded-2xl outline-0;
+   }
+
+   input::placeholder {
+      @apply text-gray;
+   }
+
+   /* @media(max-width: 1024px) {
+      body {
+         position: relative;
+         height: 100vh;
+      }
+   } */
+}
+
+/* @layer components {} */

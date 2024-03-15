@@ -3,7 +3,7 @@ import "./driver.scss";
 import Footer from "../../components/footer/footer";
 import Header from "../../components/header/header";
 import { imageLinks } from "../../assets/imageLinks";
-import CustomButton from "../../components/customButton/customButton";
+import CustomButton from "../../components/customButton";
 import { Link } from "react-router-dom";
 import Carousel from "../../components/carousel/Carousel";
 import useWindowWidth from "../../components/hooks/useWindowWidth";
