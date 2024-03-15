@@ -1,8 +1,12 @@
-// import React from 'react'
-import { Route, Routes } from "react-router-dom"
-import Rider from "./rider"
-import CitiesPage from "../citiesPage/citiesPage"
-import RiderBusinessPage from "./riderBusinessPage/riderBusinessPage"
+// eslint-disable-next-line no-unused-vars
+import React, { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
+
+const Rider = lazy(() => import("./rider"));
+const CitiesPage = lazy(() => import("../citiesPage/citiesPage"));
+const RiderBusinessPage = lazy(
+   () => import("./riderBusinessPage/riderBusinessPage")
+);
 
 const RiderRoute = () => {
    return (
@@ -11,7 +15,7 @@ const RiderRoute = () => {
          <Route path="cities" element={<CitiesPage isRider />} />
          <Route path="business" element={<RiderBusinessPage isRider />} />
       </Routes>
-   )
-}
+   );
+};
 
-export default RiderRoute
+export default RiderRoute;

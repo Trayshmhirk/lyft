@@ -23,9 +23,9 @@ const Footer = ({ isMobileView }) => {
    return (
       <footer className="flex justify-center">
          <div
-            className={`footer-container flex flex-col ${isMobileView ? "gap-4" : "mt-3 gap-2"} `}
+            className={`footer-container flex flex-col gap-4 lg:mt-3 lg:gap-2`}
          >
-            <div className={`flex ${isMobileView ? "flex-col" : ""} gap-2`}>
+            <div className={`flex flex-col gap-2 lg:flex-row`}>
                <ul className="flex flex-col gap-2">
                   <p
                      onClick={toggleDriverDropdown}

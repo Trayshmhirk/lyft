@@ -2,8 +2,6 @@ import InfoList from "../components/infoList/InfoList";
 import Carousel from "../components/carousel/Carousel";
 import CardSlider from "../components/cardSlider/CardSlider";
 import InfoButton from "../components/infoButton/InfoButton";
-import Header from "../components/header/header";
-import Footer from "../components/footer/footer";
 import CustomButton from "../components/customButton/customButton";
 import { Link } from "react-router-dom";
 import { imageLinks } from "../assets/imageLinks";
@@ -21,8 +19,6 @@ const HomePage = () => {
 
    return (
       <div className="">
-         <Header isHome isMobileView={mobileView} />
-
          <main className="flex flex-col">
             <section
                className={`first-section flex ${mobileView ? "flex-col-reverse" : "justify-center"} `}
@@ -55,9 +51,7 @@ const HomePage = () => {
                      className={`flex ${mobileView ? "justify-between reverse" : "justify-center"}  gap-4`}
                   >
                      <div className="section-info flex flex-col gap-3">
-                        <span className="fs-6 font-semibold">
-                           DRIVE WITH Lyft
-                        </span>
+                        <span className="font-semibold">DRIVE WITH LYFT</span>
                         <ul className="flex flex-col gap-4">
                            <h2 className="font-medium">
                               Set your own hours. Earn on your own terms.
@@ -107,9 +101,7 @@ const HomePage = () => {
                      className={`flex ${mobileView ? "justify-between reverse" : "justify-center"} gap-4`}
                   >
                      <div className="section-info flex flex-col gap-3">
-                        <span className="fs-6 font-semibold">
-                           RIDE WITH LYFT
-                        </span>
+                        <span className="font-semibold">RIDE WITH LYFT</span>
                         <ul className="flex flex-col gap-4">
                            <h2 className="font-medium">
                               Ready, set, go in just a few quick taps
@@ -238,7 +230,7 @@ const HomePage = () => {
                   </div>
 
                   <div className="section-info flex flex-col gap-3">
-                     <span className="fs-6 font-semibold">DRIVE SAFELY</span>
+                     <span className="font-semibold">DRIVE SAFELY</span>
                      <ul className="flex flex-col gap-4">
                         <h2 className="font-medium">
                            Your safety comes first. Always.
@@ -315,8 +307,6 @@ const HomePage = () => {
                </div>
             </section>
          </main>
-
-         <Footer isMobileView={mobileView} />
       </div>
    );
 };
