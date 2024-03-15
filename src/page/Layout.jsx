@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import Header from "../components/header/header";
+import Header from "../components/header";
 import Footer from "../components/footer/footer";
 import useWindowWidth from "../components/hooks/useWindowWidth";
 

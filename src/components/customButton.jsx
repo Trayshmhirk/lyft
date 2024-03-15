@@ -1,11 +1,18 @@
 // import React from 'react'
 
-const CustomButton = ({ children, isWhiteBtn, isPurpleBtn, isNoBorderBtn }) => {
+const CustomButton = ({
+   children,
+   isWhiteBtn,
+   isPurpleBtn,
+   isNoBorderBtn,
+   className,
+}) => {
    const buttonClassName = `
-      custom-btn min-w-[120px] h-12 font-medium px-6 rounded-[48px] cursor-pointer text-center
+      h-12 px-6 rounded-[48px] cursor-pointer
+      ${className}
       ${isWhiteBtn ? "bg-white border border-cadetBlue hover:bg-lightGray" : ""}
       ${isPurpleBtn ? "purple-btn bg-majorelleBlue text-white hover:bg-veryLightBlue" : ""}
-      ${isNoBorderBtn ? "w-[130px] bg-white" : ""}
+      ${isNoBorderBtn ? "bg-white" : ""}
    `;
 
    return (
@@ -13,7 +20,7 @@ const CustomButton = ({ children, isWhiteBtn, isPurpleBtn, isNoBorderBtn }) => {
          className={buttonClassName}
          // onClick={handleClick}
       >
-         {children}
+         <span className="text-xl font-bold">{children}</span>
       </button>
    );
 };

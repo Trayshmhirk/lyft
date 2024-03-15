@@ -6,9 +6,7 @@ export default {
       screens: {
          sm: "576px",
          md: "768px",
-         lg: "976px",
-         xl: "1240px",
-         "2xl": "1440px",
+         lg: "1024px",
       },
       fontFamily: {
          sans: ["Roboto", "sans-serif"],
@@ -23,6 +21,7 @@ export default {
             veryLightBlue: "#654EFA",
             gray: "#BDBDBD",
             shockingPink: "#FF00BF",
+            platinum: "#E6E6EA",
          },
       },
    },

@@ -25,12 +25,28 @@
       @apply text-gray;
    }
 
-   /* @media(max-width: 1024px) {
-      body {
-         position: relative;
-         height: 100vh;
-      }
-   } */
 }
 
-/* @layer components {} */
+@layer components {
+   .nav-links {
+      @apply font-bold hover:text-majorelleBlue;
+      text-decoration: none;
+      white-space: nowrap;
+   }
+
+   .sub-links {
+      @apply h-full flex items-center;
+   }
+
+   .sub-links.active-sub-link {
+      @apply border-2 border-majorelleBlue;
+   }
+
+   .sub-links a {
+      text-decoration: none;
+   }
+
+   .translate {
+      box-shadow: 0 0 1px 0 #0000001f, 0 5px 10px 0 #00000029;
+   }
+}
