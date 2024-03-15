@@ -5,14 +5,16 @@ const CustomButton = ({
    isWhiteBtn,
    isPurpleBtn,
    isNoBorderBtn,
+   isFooterBtn,
    className,
 }) => {
    const buttonClassName = `
-      h-12 px-6 rounded-[48px] cursor-pointer
+      rounded-[48px] cursor-pointer
       ${className}
       ${isWhiteBtn ? "bg-white border border-cadetBlue hover:bg-lightGray" : ""}
       ${isPurpleBtn ? "purple-btn bg-majorelleBlue text-white hover:bg-veryLightBlue" : ""}
       ${isNoBorderBtn ? "bg-white" : ""}
+      ${isFooterBtn ? "h-10 min-w-[100px] bg-opaqueIndigo px-4 text-center" : "px-6 h-12"}
    `;
 
    return (
@@ -20,7 +22,11 @@ const CustomButton = ({
          className={buttonClassName}
          // onClick={handleClick}
       >
-         <span className="text-xl font-bold">{children}</span>
+         {isFooterBtn ? (
+            <span className="text-base font-bold">{children}</span>
+         ) : (
+            <span className="text-xl font-bold">{children}</span>
+         )}
       </button>
    );
 };

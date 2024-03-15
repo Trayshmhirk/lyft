@@ -2,7 +2,6 @@
 import React from "react";
 import Header from "../components/header";
 import Footer from "../components/footer/footer";
-import useWindowWidth from "../components/hooks/useWindowWidth";
 
 const Layout = ({
    children,
@@ -13,9 +12,6 @@ const Layout = ({
    isBusiness,
    isRider,
 }) => {
-   const windowWidth = useWindowWidth();
-   const mobileView = windowWidth <= 1024;
-
    return (
       <div className="">
          <Header
@@ -25,12 +21,11 @@ const Layout = ({
             isCities={isCities}
             isBusiness={isBusiness}
             isRider={isRider}
-            isMobileView={mobileView}
          />
 
          {children}
 
-         <Footer isMobileView={mobileView} />
+         <Footer />
       </div>
    );
 };

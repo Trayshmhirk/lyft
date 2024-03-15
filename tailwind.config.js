@@ -7,6 +7,7 @@ export default {
          sm: "576px",
          md: "768px",
          lg: "1024px",
+         xl: "1200px",
       },
       fontFamily: {
          sans: ["Roboto", "sans-serif"],
@@ -22,6 +23,8 @@ export default {
             gray: "#BDBDBD",
             shockingPink: "#FF00BF",
             platinum: "#E6E6EA",
+            opaqueIndigo: "#2B1B810D",
+            grey: "#F4F4FA",
          },
       },
    },

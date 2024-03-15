@@ -281,10 +281,6 @@ section {
    }
 
    &.last-section {
-      background-color: #f4f4fa;
-      box-shadow: 0px 30px 30px 0px rgba(0, 0, 0, 0.089);
-      position: relative;
-
       img.lyft-business {
          height: 26px;
          width: 150px;
@@ -398,43 +394,3 @@ section {
    }
 }
 
-footer {
-   padding: 40px 80px;
-   padding-bottom: 50px;
-   background: #fff;
-
-   .footer-container {
-      max-width: 1200px;
-      width: 100%;
-      padding: 0px 60px;
-
-      ul {
-         width: calc(100% / 4);
-         color: #0c0b31;
-      }
-
-      .socials-and-terms {
-         font-size: 12px;
-      }
-   }
-
-   @media screen and (max-width: 1024px) {
-      padding: 60px 25px;
-   }
-
-   @media screen and (max-width: 768px) {
-      padding: 30px 25px;
-
-      .footer-container {
-         padding: 0px;
-      }
-   }
-
-   @media screen and (max-width: 1024px) {
-      .footer-container {
-         ul {
-            width: 100%;
-         }
-      }
-   }
-}
