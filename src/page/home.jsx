@@ -17,13 +17,16 @@ import {
    Lyft_HealthClinic,
    Lyft_Business_Pink,
 } from "../images/images";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
    faCalendar,
    faClock,
    faMoneyBill1,
 } from "@fortawesome/free-regular-svg-icons";
 import {
+   faArrowLeftLong,
    faArrowRight,
+   faArrowRightLong,
    faBolt,
    faHandSparkles,
    faPersonFalling,
@@ -69,7 +72,7 @@ const HomePage = () => {
 
                            {/*  */}
                            <ul className="flex flex-col gap-6">
-                              <h2 className="text-3xl font-semibold md:text-[36px] md:leading-[44px]">
+                              <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
                                  Set your own hours. Earn on your own terms.
                               </h2>
                               <InfoList
@@ -117,7 +120,7 @@ const HomePage = () => {
 
             <section className="flex flex-col gap-20 py-16 lg:gap-12">
                {/* 1 */}
-               <div className="max-w-[1280px] w-full mx-auto px-4 flex flex-col gap-12 md:px-6">
+               <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
                   <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
                      {/*  */}
                      <div className="w-full flex flex-col gap-8 self-start md:w-[41.6667%] md:pr-4 my-auto">
@@ -125,7 +128,7 @@ const HomePage = () => {
                            <span className="font-bold">RIDE WITH LYFT</span>
 
                            <ul className="flex flex-col gap-6">
-                              <h2 className="text-3xl font-semibold md:text-[36px] md:leading-[44px]">
+                              <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
                                  Ready, set, go in just a few quick taps
                               </h2>
                               <p className="">
@@ -167,7 +170,7 @@ const HomePage = () => {
                </div>
 
                {/* 2 */}
-               <div className="max-w-[1280px] w-full mx-auto px-4 flex flex-col gap-12 md:px-6">
+               <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
                   <div className="flex flex-col gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
                      <div className="w-full flex items-center justify-center md:w-[33.333%] md:items-start md:justify-end">
                         {mobileView ? (
@@ -179,7 +182,7 @@ const HomePage = () => {
 
                      <div className="w-full flex flex-col gap-8 self-start md:w-[41.6667%] md:pr-4">
                         <ul className="flex flex-col gap-6 text-[17px] md:text-base text-start">
-                           <h2 className="text-3xl font-semibold text-center md:text-[36px] md:leading-[44px] lg:text-start">
+                           <h2 className="text-3xl font-semibold text-center md:text-4xl md:leading-[44px] lg:text-start">
                               {"We're rolling out the red carpet"}
                            </h2>
                            <p className="">
@@ -236,15 +239,42 @@ const HomePage = () => {
                </div>
 
                {/* 3 */}
-               <div className="flex flex-col self-center gap-5 lg:gap-0">
-                  <div className="mt-5 pt-5">
-                     <div className="slider-heading">
-                        <h2 className="">Ride. Bike. Scoot. Go bananas.</h2>
-                        <p>
-                           {
-                              "We've got options to get you where you're going. Choose a ride* that suits your mood and budget."
-                           }
-                        </p>
+               <div className="max-w-[1280px] w-full mx-auto px-4 gap-12 md:px-6">
+                  <div className="w-full flex flex-col gap-10 sm:w-[83.333%] sm:self-center sm:mx-auto md:gap-14 lg:gap-20 xl:gap-28">
+                     <div className="flex justify-between">
+                        <div className="flex flex-col gap-3">
+                           <h2 className="text-3xl font-semibold md:text-4xl">
+                              Ride. Bike. Scoot. Go bananas.
+                           </h2>
+                           <p className="text-[17px] md:text-base font-medium">
+                              {
+                                 "We've got options to get you where you're going. Choose a ride* that suits your mood and budget."
+                              }
+                           </p>
+                        </div>
+
+                        <div className="slide-btn flex items-center gap-8 text-white">
+                           <span>
+                              <button className="w-12 h-12 flex items-center justify-center bg-majorelleBlue rounded-full cursor-pointer">
+                                 <span className="w-8 h-8">
+                                    <FontAwesomeIcon
+                                       icon={faArrowLeftLong}
+                                       className="w-8 h-8"
+                                    />
+                                 </span>
+                              </button>
+                           </span>
+                           <span>
+                              <button className="w-12 h-12 flex items-center justify-center bg-majorelleBlue rounded-full cursor-pointer">
+                                 <span className="w-8 h-8">
+                                    <FontAwesomeIcon
+                                       icon={faArrowRightLong}
+                                       className="w-8 h-8"
+                                    />
+                                 </span>
+                              </button>
+                           </span>
+                        </div>
                      </div>
 
                      <CardSlider />
@@ -252,69 +282,64 @@ const HomePage = () => {
                </div>
             </section>
 
-            <section className="fourth-section flex justify-center">
-               <div
-                  className={`section-container flex ${mobileView ? "justify-between direction-column" : "justify-center gap-4"}`}
-               >
-                  <div
-                     className={`image-container flex ${mobileView ? "items-start" : "items-center justify-start"} `}
-                  >
-                     <img src={home_pinkpaint_safety} alt="" />
-                  </div>
+            <section className="py-16 bg-culturedGray md:py-20">
+               <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
+                  <div className="flex flex-col gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
+                     <div className="w-full flex items-center justify-center md:w-[41.6667%] md:items-start md:justify-end">
+                        <img src={home_pinkpaint_safety} alt="" />
+                     </div>
 
-                  <div className="section-info flex flex-col gap-3">
-                     <span className="font-semibold">DRIVE SAFELY</span>
-                     <ul className="flex flex-col gap-4">
-                        <h2 className="font-medium">
-                           Your safety comes first. Always.
-                        </h2>
-                        <p className="">
-                           {
-                              "We look out for you before, during, and after every single ride. And we monitor rides to help you get where you need to go. If you ever need it, we're standing by, ready to help."
-                           }
-                        </p>
-                     </ul>
-                     <InfoButton
-                        btnText="Learn about safety"
-                        paraText="Community guidelines"
-                        iconClass={faArrowRight}
-                        isMobileView={mobileView}
-                     />
+                     <div className="w-full flex flex-col gap-8 self-start md:w-[33.333%] md:pr-4">
+                        <div className="flex flex-col gap-2 text-[17px] md:text-base">
+                           <span className="font-bold">SAFETY FIRST</span>
+                           <ul className="flex flex-col gap-4">
+                              <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
+                                 Your safety comes first. Always.
+                              </h2>
+                              <p className="">
+                                 {
+                                    "We look out for you before, during, and after every single ride. And we monitor rides to help you get where you need to go. If you ever need it, we're standing by, ready to help."
+                                 }
+                              </p>
+                           </ul>
+                        </div>
+                        <InfoButton
+                           btnText="Learn about safety"
+                           paraText="Community guidelines"
+                           iconClass={faArrowRight}
+                           isNotCenter
+                        />
+                     </div>
                   </div>
                </div>
             </section>
 
-            <section className="fifth-section flex justify-center">
-               <div
-                  className={`section-container flex ${mobileView ? "justify-between reverse" : "justify-center gap-4"}`}
-               >
-                  <div className="section-info flex flex-col gap-3">
-                     <ul className="flex flex-col gap-4">
-                        <h2 className="font-medium">
-                           Making millions of rides more accessible
-                        </h2>
-                        <p className="">
-                           {
-                              "A ride is more than just a ride. It's a gateway to opportunities and jobs. A connection to community. And access to essentials like groceries, healthcare, and polling places. Our Lyft Up initiative makes rides more accessible for millions, and helps bring communities even closer."
-                           }
-                        </p>
-                     </ul>
-                     <div className="flex gap-3">
-                        <div className="">
-                           <Link className="font-semibold">
+            <section className="py-16 bg-white md:py-20">
+               <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
+                  <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
+                     <div className="w-full flex flex-col gap-8 self-start text-[17px] md:text-base md:w-[33.333%] md:pr-4">
+                        <ul className="flex flex-col gap-4">
+                           <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
+                              Making millions of rides more accessible
+                           </h2>
+                           <p className="">
+                              {
+                                 "A ride is more than just a ride. It's a gateway to opportunities and jobs. A connection to community. And access to essentials like groceries, healthcare, and polling places. Our Lyft Up initiative makes rides more accessible for millions, and helps bring communities even closer."
+                              }
+                           </p>
+                        </ul>
+                        <Link className="flex gap-3 items-center">
+                           <span className="font-bold">
                               Learn about our Lyft Up programs
-                           </Link>
-                        </div>
-                        <div>
-                           <i className="fa-solid fa-arrow-right"></i>
-                        </div>
-                     </div>
-                  </div>
+                           </span>
 
-                  <div
-                     className={`image-container flex ${mobileView ? "items-start" : "items-end justify-end"}`}
-                  >
-                     <img src={Lyft_HealthClinic} alt="" />
+                           <FontAwesomeIcon icon={faArrowRight} />
+                        </Link>
+                     </div>
+
+                     <div className="w-full flex items-center justify-center md:w-[41.6667%] md:items-start md:justify-end">
+                        <img src={Lyft_HealthClinic} alt="" />
+                     </div>
                   </div>
                </div>
             </section>
