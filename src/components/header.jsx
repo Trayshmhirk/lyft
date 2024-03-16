@@ -19,7 +19,7 @@ const Header = ({
 }) => {
    return (
       <header className="w-full h-[81px] flex justify-center border-b border-gainsboro">
-         <div className="header-container max-w-[1280px] w-full mx-auto px-4 flex justify-between items-center gap-5">
+         <div className="max-w-[1280px] w-full mx-auto px-4 flex justify-between items-center gap-5 md:px-6">
             <span className="font-bold text-shockingPink cursor-pointer hover:text-cetaceanBlue">
                <FontAwesomeIcon icon={faLyft} className="w-16 text-[52px]" />{" "}
                {isBusiness && "business"}
@@ -42,7 +42,7 @@ const Header = ({
                         <CustomButton
                            isPurpleBtn
                            className={
-                              "h-[32px] min-w-[100px] px-4 sm:h-12 sm:w-[138px] sm:px-6"
+                              "h-[32px] min-w-[100px] px-4 sm:h-12 sm:w-[138px]"
                            }
                         >
                            Get a ride

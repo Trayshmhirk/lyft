@@ -1,15 +1,11 @@
 // import React from 'react'
 import "./citiesPage.scss";
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
 // import CustomButton from "../../../components/customButton/customButton"
 // import { Link } from "react-router-dom"
 
-const CitiesPage = ({ isDriver, isRider }) => {
+const CitiesPage = () => {
    return (
       <div className="cities">
-         <Header isDriver={isDriver} isRider={isRider} isCities />
-
          <main className="flex flex-col">
             <section className="last-section flex justify-center">
                <div className="section-container self-center flex items-center gap-4">
@@ -27,8 +23,6 @@ const CitiesPage = ({ isDriver, isRider }) => {
                </div>
             </section>
          </main>
-
-         <Footer />
       </div>
    );
 };

@@ -1,7 +1,5 @@
 // import React from 'react'
 import "./driver.scss";
-import Footer from "../../components/footer/footer";
-import Header from "../../components/header/header";
 import { imageLinks } from "../../assets/imageLinks";
 import CustomButton from "../../components/customButton";
 import { Link } from "react-router-dom";
@@ -15,8 +13,6 @@ const Driver = () => {
 
    return (
       <div className="driver">
-         <Header isDriver isMobileView={mobileView} />
-
          <main className="flex flex-col">
             <section className="first-section flex justify-center">
                <div
@@ -174,8 +170,6 @@ const Driver = () => {
                </div>
             </section>
          </main>
-
-         <Footer isMobileView={mobileView} />
       </div>
    );
 };

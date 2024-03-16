@@ -4,6 +4,7 @@ export default {
 
    theme: {
       screens: {
+         xs: "424px",
          sm: "576px",
          md: "768px",
          lg: "1024px",
@@ -24,7 +25,7 @@ export default {
             shockingPink: "#FF00BF",
             platinum: "#E6E6EA",
             opaqueIndigo: "#2B1B810D",
-            grey: "#F4F4FA",
+            culturedGray: "#F4F4FA",
          },
       },
    },

@@ -1,12 +1,12 @@
 // import React from 'react'
 import { useState } from "react";
-import CustomButton from "../customButton";
+import CustomButton from "./customButton";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { MdGTranslate } from "react-icons/md";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import HorizontalLine from "../horizontalLine";
+import HorizontalLine from "./horizontalLine";
 import {
    faFacebook,
    faInstagram,
@@ -350,8 +350,8 @@ const Footer = () => {
             </div>
 
             {/* SOCIALS */}
-            <div className="text-xs w-full flex flex-col-reverse justify-end gap-6 pl-6 lg:flex-col lg:p-0">
-               <div className="footer-socials flex flex-wrap gap-6 lg:flex-nowrap lg:gap-0">
+            <div className="text-xs w-full flex flex-col-reverse justify-end gap-6 pl-6 lg:flex-row lg:p-0">
+               <div className="footer-socials flex flex-wrap gap-5 lg:flex-nowrap lg:gap-6">
                   <Link>Terms</Link>
                   <Link>Privacy</Link>
                   <Link>Accessibility statement</Link>

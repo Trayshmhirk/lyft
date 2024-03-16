@@ -1,7 +1,5 @@
 // import React from 'react'
 import "./earningsPage.scss";
-import Header from "../../../components/header/header";
-import Footer from "../../../components/footer/footer";
 import CustomButton from "../../../components/customButton";
 import { Link } from "react-router-dom";
 import HorizontalLine from "../../../components/horizontalLine";
@@ -37,8 +35,6 @@ const EarningsPage = () => {
 
    return (
       <div className="earnings">
-         <Header isDriver isEarning />
-
          <main className="flex flex-col">
             <section className="first-section flex justify-center">
                <div className="first-section-container flex self-center justify-center gap-4">
@@ -432,8 +428,6 @@ const EarningsPage = () => {
                </div>
             </section>
          </main>
-
-         <Footer />
       </div>
    );
 };

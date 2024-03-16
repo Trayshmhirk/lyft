@@ -1,14 +1,13 @@
 import CustomButton from "../customButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const InfoButton = ({ btnText, paraText, iconClass, isMobileView }) => {
+const InfoButton = ({ btnText, paraText, iconClass }) => {
    return (
-      <div
-         className={`info-button flex ${isMobileView ? "flex-col gap-3" : "gap-4"} items-center `}
-      >
+      <div className="flex flex-col gap-5 items-center lg:flex-row lg:items-center">
          <CustomButton isPurpleBtn>{btnText}</CustomButton>
-         <div className="flex items-center gap-3 fs-5 font-medium">
+         <div className="flex items-center gap-3 font-bold">
             {paraText}
-            <i className={`${iconClass} mt-1`}></i>
+            <FontAwesomeIcon icon={iconClass} className="-mt-[2px]" />
          </div>
       </div>
    );
