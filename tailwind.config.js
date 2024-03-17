@@ -26,6 +26,7 @@ export default {
             platinum: "#E6E6EA",
             opaqueIndigo: "#2B1B810D",
             culturedGray: "#F4F4FA",
+            darkElectricBlue: "#63637B",
          },
       },
    },

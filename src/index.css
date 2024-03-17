@@ -5,7 +5,7 @@
 @layer base {
 
    body {
-      @apply text-cetaceanBlue;
+      @apply text-cetaceanBlue text-[17px] md:text-base;
       scroll-behavior: smooth;
    }
 
@@ -60,7 +60,19 @@
       box-shadow: 0 0 1px 0 #0000001f, 0 5px 10px 0 #00000029;
    }
 
+   .btn-shadow {
+      box-shadow: 0 0 1px 0 #0000001f, 0 2px 3px 0 #00000029;
+   }
+
    .footer-socials a {
       text-decoration: underline;
+   }
+
+   .dot {
+      @apply w-2 h-2 rounded-full border border-cetaceanBlue;
+   }
+
+   .dot.active {
+      @apply bg-cetaceanBlue;
    }
 }

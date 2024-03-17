@@ -33,14 +33,16 @@ const Header = ({
             >
                <div
                   className={`
-                   flex gap-6 items-center
+                   flex  items-center
                      ${isDriver ? "w-full justify-end" : ""}
+                     ${isHome ? "gap-5" : "gap-6"}
                   `}
                >
                   {isHome && (
                      <div className="">
                         <CustomButton
                            isPurpleBtn
+                           isHome
                            className={
                               "h-[32px] min-w-[100px] px-4 sm:h-12 sm:w-[138px]"
                            }

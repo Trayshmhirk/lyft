@@ -7,6 +7,7 @@ const CustomButton = ({
    isNoBorderBtn,
    isFooterBtn,
    className,
+   isHome,
 }) => {
    const buttonClassName = `
       rounded-[48px] cursor-pointer
@@ -25,7 +26,11 @@ const CustomButton = ({
          {isFooterBtn ? (
             <span className="text-base font-bold">{children}</span>
          ) : (
-            <span className="text-xl font-bold">{children}</span>
+            <span
+               className={`${isHome ? "text-base lg:text-xl-4" : "text-xl"} font-bold`}
+            >
+               {children}
+            </span>
          )}
       </button>
    );

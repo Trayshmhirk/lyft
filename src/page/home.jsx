@@ -1,11 +1,9 @@
 import InfoList from "../components/infoList/InfoList";
-import Carousel from "../components/carousel/Carousel";
+import Carousel from "../components/Carousel";
 import CardSlider from "../components/cardSlider/CardSlider";
 import InfoButton from "../components/infoButton/InfoButton";
 import CustomButton from "../components/customButton";
 import { Link } from "react-router-dom";
-import useWindowWidth from "../components/hooks/useWindowWidth";
-
 import {
    home_pinkpaint_hero,
    home_pinkpaint_driver,
@@ -35,9 +33,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const HomePage = () => {
-   const windowWidth = useWindowWidth();
-   const mobileView = windowWidth <= 1024;
-
    return (
       <div className="">
          <main className="flex flex-col">
@@ -67,7 +62,7 @@ const HomePage = () => {
                   <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
                      {/*  */}
                      <div className="w-full flex flex-col gap-8 self-start md:w-[41.6667%] md:pr-4">
-                        <div className="flex flex-col gap-2 text-center text-[17px] md:text-base lg:text-start">
+                        <div className="flex flex-col gap-2 text-center lg:text-start">
                            <span className="font-bold">DRIVE WITH LYFT</span>
 
                            {/*  */}
@@ -101,15 +96,17 @@ const HomePage = () => {
 
                      {/*  */}
                      <div className="w-full flex items-center justify-center md:w-[33.333%] md:items-start md:justify-end">
-                        {mobileView ? (
-                           <img
-                              className=""
-                              src={Driver_Homepage_Mobile}
-                              alt=""
-                           />
-                        ) : (
-                           <img src={home_pinkpaint_driver} alt="" />
-                        )}
+                        <img
+                           className="block lg:hidden"
+                           src={Driver_Homepage_Mobile}
+                           alt=""
+                        />
+
+                        <img
+                           src={home_pinkpaint_driver}
+                           alt=""
+                           className="hidden lg:block"
+                        />
                      </div>
                   </div>
 
@@ -124,7 +121,7 @@ const HomePage = () => {
                   <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
                      {/*  */}
                      <div className="w-full flex flex-col gap-8 self-start md:w-[41.6667%] md:pr-4 my-auto">
-                        <div className="flex flex-col gap-2 text-center text-[17px] md:text-base lg:text-start">
+                        <div className="flex flex-col gap-2 text-center lg:text-start">
                            <span className="font-bold">RIDE WITH LYFT</span>
 
                            <ul className="flex flex-col gap-6">
@@ -158,7 +155,6 @@ const HomePage = () => {
                            btnText="Get a ride"
                            paraText="Learn more about riding with lyft"
                            iconClass={faArrowRight}
-                           isMobileView={mobileView}
                         />
                      </div>
 
@@ -173,15 +169,21 @@ const HomePage = () => {
                <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
                   <div className="flex flex-col gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
                      <div className="w-full flex items-center justify-center md:w-[33.333%] md:items-start md:justify-end">
-                        {mobileView ? (
-                           <img src={Lyft_Pink_Mobile_V5} alt="" />
-                        ) : (
-                           <img src={Lyft_Pink_Image} alt="" />
-                        )}
+                        <img
+                           src={Lyft_Pink_Mobile_V5}
+                           alt=""
+                           className="block lg:hidden"
+                        />
+
+                        <img
+                           src={Lyft_Pink_Image}
+                           alt=""
+                           className="hidden lg:block"
+                        />
                      </div>
 
                      <div className="w-full flex flex-col gap-8 self-start md:w-[41.6667%] md:pr-4">
-                        <ul className="flex flex-col gap-6 text-[17px] md:text-base text-start">
+                        <ul className="flex flex-col gap-6 text-start">
                            <h2 className="text-3xl font-semibold text-center md:text-4xl md:leading-[44px] lg:text-start">
                               {"We're rolling out the red carpet"}
                            </h2>
@@ -241,19 +243,19 @@ const HomePage = () => {
                {/* 3 */}
                <div className="max-w-[1280px] w-full mx-auto px-4 gap-12 md:px-6">
                   <div className="w-full flex flex-col gap-10 sm:w-[83.333%] sm:self-center sm:mx-auto md:gap-14 lg:gap-20 xl:gap-28">
-                     <div className="flex justify-between">
-                        <div className="flex flex-col gap-3">
+                     <div className="flex flex-col gap-6 text-center lg:flex-row lg:justify-between lg:text-start">
+                        <div className="flex flex-col gap-2">
                            <h2 className="text-3xl font-semibold md:text-4xl">
                               Ride. Bike. Scoot. Go bananas.
                            </h2>
-                           <p className="text-[17px] md:text-base font-medium">
+                           <p className=" font-medium">
                               {
                                  "We've got options to get you where you're going. Choose a ride* that suits your mood and budget."
                               }
                            </p>
                         </div>
 
-                        <div className="slide-btn flex items-center gap-8 text-white">
+                        <div className="slide-btn flex items-center self-center gap-8 text-white">
                            <span>
                               <button className="w-12 h-12 flex items-center justify-center bg-majorelleBlue rounded-full cursor-pointer">
                                  <span className="w-8 h-8">
@@ -290,7 +292,7 @@ const HomePage = () => {
                      </div>
 
                      <div className="w-full flex flex-col gap-8 self-start md:w-[33.333%] md:pr-4">
-                        <div className="flex flex-col gap-2 text-[17px] md:text-base">
+                        <div className="flex flex-col gap-2">
                            <span className="font-bold">SAFETY FIRST</span>
                            <ul className="flex flex-col gap-4">
                               <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
@@ -317,7 +319,7 @@ const HomePage = () => {
             <section className="py-16 bg-white md:py-20">
                <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
                   <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
-                     <div className="w-full flex flex-col gap-8 self-start text-[17px] md:text-base md:w-[33.333%] md:pr-4">
+                     <div className="w-full flex flex-col gap-8 self-start md:w-[33.333%] md:pr-4">
                         <ul className="flex flex-col gap-4">
                            <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
                               Making millions of rides more accessible
@@ -344,23 +346,36 @@ const HomePage = () => {
                </div>
             </section>
 
-            <section className="last-section flex justify-center">
-               <div className="section-container self-center flex flex-col justify-center items-center gap-3">
-                  <img className="lyft-business" src={Lyft_Business_Pink} />
+            <section className="flex flex-col gap-16 py-16 bg-culturedGray md:py-20">
+               <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
+                  <div className="w-full flex flex-col gap-4 items-center text-center text-blac sm:w-[83.333%] sm:self-center sm:mx-auto">
+                     <img className="max-w-[150px]" src={Lyft_Business_Pink} />
 
-                  <h2 className="flex flex-col items-center gap-2">
-                     We help move
-                     <span>business</span>
-                  </h2>
+                     <h2 className="flex flex-col text-3xl font-semibold md:text-4xl md:leading-[44px]">
+                        <span>We help move</span>
+                        <span>business</span>
+                     </h2>
 
-                  <div className="flex flex-col items-center gap-5">
-                     <p className="text-center">
-                        {
-                           "From affordable transportation solutions to effortless expensing, we'll help drive your business forward by getting your people where they need to go."
-                        }
-                     </p>
+                     <div className="flex flex-col items-center gap-12">
+                        <p className="text-base">
+                           &quot;From affordable transportation solutions to
+                           effortless expensing, we&apos;ll help drive your
+                           business forward
+                           <br />
+                           by getting your people where they need to go.&quot;
+                        </p>
 
-                     <CustomButton isNoBorderBtn>Learn more</CustomButton>
+                        <CustomButton isNoBorderBtn className="btn-shadow">
+                           Learn more
+                        </CustomButton>
+                     </div>
+                  </div>
+               </div>
+
+               {/*  */}
+               <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
+                  <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
+                     {/*  */}
                   </div>
                </div>
             </section>
