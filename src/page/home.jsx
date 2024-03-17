@@ -31,6 +31,7 @@ import {
    faShieldHalved,
    faUtensils,
 } from "@fortawesome/free-solid-svg-icons";
+import SupportSlide from "../components/SupportSlide";
 
 const HomePage = () => {
    return (
@@ -242,7 +243,7 @@ const HomePage = () => {
 
                {/* 3 */}
                <div className="max-w-[1280px] w-full mx-auto px-4 gap-12 md:px-6">
-                  <div className="w-full flex flex-col gap-10 sm:w-[83.333%] sm:self-center sm:mx-auto md:gap-14 lg:gap-20 xl:gap-28">
+                  <div className="w-full flex flex-col sm:w-[83.333%] sm:self-center sm:mx-auto">
                      <div className="flex flex-col gap-6 text-center lg:flex-row lg:justify-between lg:text-start">
                         <div className="flex flex-col gap-2">
                            <h2 className="text-3xl font-semibold md:text-4xl">
@@ -280,6 +281,13 @@ const HomePage = () => {
                      </div>
 
                      <CardSlider />
+
+                     <div>
+                        <p className="text-xs text-[#0C0B31B3]">
+                           *Availability of bikes, scooters, rentals, ride
+                           types, and transit information varies by region.
+                        </p>
+                     </div>
                   </div>
                </div>
             </section>
@@ -374,8 +382,8 @@ const HomePage = () => {
 
                {/*  */}
                <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
-                  <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
-                     {/*  */}
+                  <div className="w-full flex flex-col sm:w-[83.333%] sm:self-center sm:mx-auto">
+                     <SupportSlide />
                   </div>
                </div>
             </section>

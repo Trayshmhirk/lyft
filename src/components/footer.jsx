@@ -45,7 +45,7 @@ const Footer = () => {
             >
                {/* DRIVER */}
                <div className="pr-4 md:p-0">
-                  <div className="hidden flex-col gap-8 md:flex">
+                  <div className="hidden w-[230px] flex-col gap-8 md:flex">
                      <h2 className="font-semibold">Driver</h2>
                      <div className="flex flex-col gap-2">
                         <li>Become a driver</li>
@@ -104,7 +104,7 @@ const Footer = () => {
 
                {/* RIDER */}
                <div className="pr-4 md:p-0">
-                  <div className="hidden flex-col gap-8 md:flex">
+                  <div className="hidden w-[230px] flex-col gap-8 md:flex">
                      <h2 className="font-semibold">Rider</h2>
                      <div className="flex flex-col gap-2">
                         <li>Sign Up To Ride</li>
@@ -159,7 +159,7 @@ const Footer = () => {
 
                {/* LYFT */}
                <div className="pr-4 md:p-0">
-                  <div className="hidden flex-col gap-8 md:flex">
+                  <div className="hidden w-[230px] flex-col gap-8 md:flex">
                      <h2 className="font-semibold">Lyft</h2>
                      <div className="flex flex-col gap-2">
                         <li>Careers</li>
@@ -213,7 +213,7 @@ const Footer = () => {
                <HorizontalLine className="block md:hidden" />
 
                {/* BUTTONS */}
-               <div className="w-full flex flex-col items-center gap-3 py-8 md:w-fit md:items-stretch md:py-0">
+               <div className="w-full flex flex-col items-center gap-3 py-8 md:w-[230px] md:items-start md:py-0">
                   <CustomButton isFooterBtn>Lyft driver app</CustomButton>
                   <CustomButton isFooterBtn>Lyft rider app</CustomButton>
                </div>

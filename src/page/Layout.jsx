@@ -13,7 +13,7 @@ const Layout = ({
    isRider,
 }) => {
    return (
-      <div className="">
+      <>
          <Header
             isHome={isHome}
             isDriver={isDriver}
@@ -26,7 +26,7 @@ const Layout = ({
          {children}
 
          <Footer />
-      </div>
+      </>
    );
 };
 

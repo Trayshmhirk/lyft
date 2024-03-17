@@ -46,7 +46,7 @@ const Carousel = () => {
    const PrevArrow = () => {
       return (
          <div
-            className="bottom-0 left-[40%] w-8 h-8 flex items-center justify-center rounded-full border border-cetaceanBlue"
+            className="bottom-0 left-[40%] w-8 h-8 flex items-center justify-center rounded-full border border-cetaceanBlue cursor-pointer"
             onClick={() => sliderRef.current.slickPrev()}
          >
             <FaArrowLeft />
@@ -57,7 +57,7 @@ const Carousel = () => {
    const NextArrow = () => {
       return (
          <div
-            className="bottom-0 right-[40%] w-8 h-8 flex items-center justify-center rounded-full border border-cetaceanBlue"
+            className="bottom-0 right-[40%] w-8 h-8 flex items-center justify-center rounded-full border border-cetaceanBlue cursor-pointer"
             onClick={() => sliderRef.current.slickNext()}
          >
             <FaArrowRight />

@@ -75,4 +75,9 @@
    .dot.active {
       @apply bg-cetaceanBlue;
    }
+
+   .card {
+      @apply max-w-full rounded-2xl;
+      box-shadow: 0 0 1px 0 #0000001f, 0 2px 3px 0 #00000029;
+   }
 }
