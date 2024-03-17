@@ -1,7 +1,7 @@
-import InfoList from "../components/infoList/InfoList";
+import InfoList from "../components/InfoList";
 import Carousel from "../components/Carousel";
-import CardSlider from "../components/cardSlider/CardSlider";
-import InfoButton from "../components/infoButton/InfoButton";
+import CardSlider from "../components/CardSlider";
+import InfoButton from "../components/InfoButton";
 import CustomButton from "../components/customButton";
 import { Link } from "react-router-dom";
 import {
@@ -45,6 +45,7 @@ const HomePage = () => {
                         alt="A lyft ride"
                      />
                   </div>
+
                   <div className="w-full h-full flex flex-col items-center gap-10 lg:w-[41.6667%] lg:items-start lg:justify-center">
                      <h1 className="text-[48px] leading-[54px] font-semibold lg:text-[80px] lg:leading-[92px]">
                         {"Let's ride"}
@@ -110,7 +111,6 @@ const HomePage = () => {
                      </div>
                   </div>
 
-                  {/*  */}
                   <Carousel />
                </div>
             </section>
@@ -257,7 +257,7 @@ const HomePage = () => {
 
                         <div className="slide-btn flex items-center self-center gap-8 text-white">
                            <span>
-                              <button className="w-12 h-12 flex items-center justify-center bg-majorelleBlue rounded-full cursor-pointer">
+                              <button className="w-12 h-12 flex items-center text-black cursor-pointer">
                                  <span className="w-8 h-8">
                                     <FontAwesomeIcon
                                        icon={faArrowLeftLong}

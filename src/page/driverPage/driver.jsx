@@ -3,8 +3,8 @@ import "./driver.scss";
 import { imageLinks } from "../../assets/imageLinks";
 import CustomButton from "../../components/customButton";
 import { Link } from "react-router-dom";
-import Carousel from "../../components/carousel/Carousel";
-import useWindowWidth from "../../components/hooks/useWindowWidth";
+import Carousel from "../../components/Carousel";
+import useWindowWidth from "../../hooks/useWindowWidth";
 
 const Driver = () => {
    const windowWidth = useWindowWidth();

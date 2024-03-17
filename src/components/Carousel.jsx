@@ -107,9 +107,9 @@ const Carousel = () => {
                <div
                   key={tmn.id}
                   className={`
-                        h-full w-full px-8 
-                        ${idx === sliderIndex ? "text-black" : "text-darkElectricBlue "}
-                     `}
+                     h-full w-full px-8 
+                     ${idx === sliderIndex ? "text-black" : "text-darkElectricBlue "}
+                  `}
                >
                   <div className="flex flex-col items-center gap-8 text-center ">
                      <img
