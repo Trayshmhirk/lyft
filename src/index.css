@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @font-face {
+   font-family: "Raleway";
+   src: url();
+} */
+
 @layer base {
 
    body {
@@ -18,7 +23,7 @@
    }
 
    input {
-      @apply p-4 border border-gray rounded-2xl outline-0;
+      @apply p-4 border border-[#0c0b3173] rounded-xl outline-0;
    }
 
    input::placeholder {
@@ -36,6 +41,8 @@
    }
 
 }
+
+@layer utilities {}
 
 @layer components {
    .nav-link {
@@ -79,5 +86,30 @@
    .card {
       @apply max-w-full rounded-2xl;
       box-shadow: 0 0 1px 0 #0000001f, 0 2px 3px 0 #00000029;
+   }
+
+   .link-underline {
+      @apply underline text-majorelleBlue;
+   }
+
+   .driver-section-bg-image {
+      background-image: url("https: //images.ctfassets.net/q8mvene1wzq4/68C55zDYWdqWrNHec9lYDW/9e00cff4e8ec164cb798cdbd67bc2d94/Lyft_Night_Shot_Desktop.jpg?w=2500&q=75&fm=webp");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+   }
+
+   .driver-flex-1 {
+      flex: 1 1 0%;
+   }
+
+   .driver-flex-2 {
+      flex: 1 1 0%;
+   }
+
+   @media screen and (min-width: 768px) {
+      .driver-section-bg-image {
+         background-image: url("https: //images.ctfassets.net/q8mvene1wzq4/5bdhhrAEPWVAn6lnUNRXmq/395b5ec79c6c26afbb652e34cd7c8f79/Lyft_Night_Shot_Mobile.jpg?w=1400&q=75&fm=webp");
+      }
    }
 }

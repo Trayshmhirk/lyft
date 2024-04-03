@@ -5,7 +5,7 @@ export const home_pinkpaint_driver =
    "https://images.ctfassets.net/q8mvene1wzq4/2qig3wGIPssGl5C9tS0Lrt/f68bb064f872385abc6e95606cb0794e/home_pinkpaint_driver.jpg?w=1500&q=60&fm=webp";
 
 export const rider_stylized_text_image =
-   "https://images.ctfassets.net/q8mvene1wzq4/2R3M8S6ZIA7SXbMsCkxvMI/182aa15b6e4d059f3ac5d2fa530a235e/rider_stylized_text_image__2___1_.png?w=1500&q=60&fm=webp";
+   "https://images.ctfassets.net/q8mvene1wzq4/3cHTnz98k6rNl3GEcze3xk/1f33e4f2b6036b2b652ef0fd7fb8fe0d/Select_Lyft_EN_v5.png?w=1500&q=60&fm=webp";
 
 export const Lyft_Pink_Image =
    "https://images.ctfassets.net/q8mvene1wzq4/1H8Zw8AkZvMYqLkWnBjO3f/a2406a01c7a91b37f78c427326006fa8/Lyft_Pink_Image_V3.jpg?w=1500&q=60&fm=webp";
@@ -27,6 +27,9 @@ export const HOSPITAL_4677 =
 
 export const GenericPhone_11 =
    "https://cdn.lyft.com/lyftcomfe/_next/static/media/GenericPhone_11.c7bd81d3.png";
+
+export const Ride_Challenge =
+   "https://images.ctfassets.net/q8mvene1wzq4/2R8Y7rj79sKgIePkDADjIa/c02b88b26568c665cd5f9ec45816c1ee/Ride-Challenge-02_2x.png?w=700&q=75";
 
 export const dvr_pgr_pp =
    "https://images.ctfassets.net/q8mvene1wzq4/14j1VooOckKD3p29hMHlaz/55206618a33b79c121968f9e8eb68ab8/dvr_pgr_pp.jpg";
@@ -117,3 +120,10 @@ export const preorderRide =
 
 export const takeCare =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/takeCare.384d02b1.svg";
+
+// driver page images
+export const Lyft_Night_Shot_Desktop =
+   "https://images.ctfassets.net/q8mvene1wzq4/68C55zDYWdqWrNHec9lYDW/9e00cff4e8ec164cb798cdbd67bc2d94/Lyft_Night_Shot_Desktop.jpg?w=2500&q=75&fm=webp";
+
+export const Lyft_Night_Shot_Mobile =
+   "https://images.ctfassets.net/q8mvene1wzq4/5bdhhrAEPWVAn6lnUNRXmq/395b5ec79c6c26afbb652e34cd7c8f79/Lyft_Night_Shot_Mobile.jpg?w=1400&q=75&fm=webp";

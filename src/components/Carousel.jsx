@@ -39,7 +39,7 @@ const testimony = [
 ];
 
 // slidesToScroll: 1,
-const Carousel = () => {
+const Carousel = ({ slidesToShow, isDriver }) => {
    const [sliderIndex, setSliderIndex] = useState(0);
    const sliderRef = useRef(null);
 
@@ -70,7 +70,7 @@ const Carousel = () => {
       arrows: false,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
+      slidesToShow: slidesToShow,
       lazyLoad: true,
       centerMode: true,
       centerPadding: 0,
@@ -103,9 +103,9 @@ const Carousel = () => {
    return (
       <div className="">
          <Slider ref={sliderRef} {...sliderSettings} className="">
-            {testimony.map((tmn, idx) => (
+            {testimony.map((data, idx) => (
                <div
-                  key={tmn.id}
+                  key={data.id}
                   className={`
                      h-full w-full px-8 
                      ${idx === sliderIndex ? "text-black" : "text-darkElectricBlue "}
@@ -113,20 +113,28 @@ const Carousel = () => {
                >
                   <div className="flex flex-col items-center gap-8 text-center ">
                      <img
-                        src={tmn.image}
+                        src={data.image}
                         alt=""
                         className={`
-                           max-w-20 w-full h-auto transition-transform duration-300 delay-[400ms] scale-[.6]
+                           w-full h-auto 
                            ${idx === sliderIndex ? "scale-100" : "opacity-50"}
+                           ${isDriver ? "max-w-32 max-h-32" : "max-w-20 transition-transform duration-300 delay-[400ms] scale-[.6]"}
                         `}
                      />
 
-                     <p className="text-xl">
-                        <q>{tmn.quote}</q>
+                     <p>
+                        <q
+                           className={`
+                           text-cetaceanBlue
+                           ${isDriver ? "text-3xl font-light md:text-4xl md:leading-[44px]" : "text-xl"}  
+                        `}
+                        >
+                           {data.quote}
+                        </q>
                      </p>
                      <div className="flex flex-col gap-2">
-                        <p className="font-medium">--{tmn.name}</p>
-                        <p className="italic">{tmn.extra}</p>
+                        <p className="font-medium">--{data.name}</p>
+                        <p className="italic">{data.extra}</p>
                      </div>
                   </div>
                </div>

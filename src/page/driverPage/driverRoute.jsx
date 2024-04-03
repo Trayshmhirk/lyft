@@ -20,7 +20,7 @@ const DriverRoute = () => {
                }
             />
             <Route
-               path="pay"
+               path="earnings"
                element={
                   <Layout isDriver={true} isEarning={true}>
                      <EarningsPage />

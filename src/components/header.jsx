@@ -19,7 +19,7 @@ const Header = ({
 }) => {
    return (
       <header className="w-full h-[81px] flex justify-center border-b border-gainsboro">
-         <div className="max-w-[1280px] w-full mx-auto px-4 flex justify-between items-center gap-5 md:px-6">
+         <div className="max-w-[1280px] w-full mx-auto px-4 flex justify-between items-center gap-10 md:px-6">
             <span className="font-bold text-shockingPink cursor-pointer hover:text-cetaceanBlue">
                <FontAwesomeIcon icon={faLyft} className="w-16 text-[52px]" />{" "}
                {isBusiness && "business"}
@@ -59,31 +59,33 @@ const Header = ({
                   <div className="hidden w-full h-full items-center lg:flex lg:gap-6">
                      <Line />
                      {isDriver ? (
-                        <div className="h-full w-full flex items-center gap-[35px]">
+                        <div className="h-full w-full flex items-center gap-8">
                            <Link className="nav-link" to="/driver">
                               DRIVER
                            </Link>
-                           <Link
-                              className={`sub-link ${isEarning ? "active-sub-link" : ""}`}
-                              to={"/driver/pay"}
-                           >
-                              Earnings
-                           </Link>
-                           <Link
-                              className={`sub-link ${isCities ? "active-sub-link" : ""}`}
-                              to={"/driver/cities"}
-                           >
-                              Cities
-                           </Link>
-                           <Link className="sub-link" to={""}>
-                              Help
-                           </Link>
+                           <div className="h-full w-full flex items-center gap-6">
+                              <Link
+                                 className={`sub-link ${isEarning ? "active-sub-link" : ""}`}
+                                 to={"/driver/earnings"}
+                              >
+                                 Earnings
+                              </Link>
+                              <Link
+                                 className={`sub-link ${isCities ? "active-sub-link" : ""}`}
+                                 to={"/driver/cities"}
+                              >
+                                 Cities
+                              </Link>
+                              <Link className="sub-link" to={""}>
+                                 Help
+                              </Link>
 
-                           {isEarning && (
-                              <CustomButton isPurpleBtn>
-                                 Become a driver
-                              </CustomButton>
-                           )}
+                              {isEarning && (
+                                 <CustomButton isPurpleBtn>
+                                    Become a driver
+                                 </CustomButton>
+                              )}
+                           </div>
                         </div>
                      ) : (
                         <Link className="nav-link" to="/driver">
@@ -93,7 +95,7 @@ const Header = ({
                      <Line />
                      {isRider ? (
                         <div
-                           className={`${isBusiness ? "w-[500px]" : "w-[560px]"} h-full w-full flex items-center gap-[35px]`}
+                           className={`${isBusiness ? "w-[500px]" : "w-[560px]"} h-full w-full flex items-center gap-8`}
                         >
                            <Link className="nav-link" to="/rider">
                               RIDER
