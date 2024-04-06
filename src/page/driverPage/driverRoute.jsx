@@ -3,9 +3,9 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "../Layout";
 
-const Driver = lazy(() => import("./driver"));
-const EarningsPage = lazy(() => import("./earningsPage/earningsPage"));
-const CitiesPage = lazy(() => import("../citiesPage/citiesPage"));
+const Driver = lazy(() => import("./Driver"));
+const EarningsPage = lazy(() => import("./earningsPage/EarningsPage"));
+const CitiesPage = lazy(() => import("../CitiesPage/CitiesPage"));
 
 const DriverRoute = () => {
    return (

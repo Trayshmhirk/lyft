@@ -1,8 +1,8 @@
 // import React from 'react'
 import "./businessPage.scss";
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
-import CustomButton from "../../components/customButton";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import CustomButton from "../../components/CustomButton";
 import { Link } from "react-router-dom";
 
 const BusinessPage = () => {

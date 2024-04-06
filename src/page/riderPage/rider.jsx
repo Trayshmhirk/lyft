@@ -1,9 +1,8 @@
 // import React from 'react'
-import "./rider.scss";
-import Header from "../../components/header/header";
-import Footer from "../../components/footer/footer";
-import CustomButton from "../../components/customButton";
-import Line from "../../components/line";
+import Header from "../../components/header/Header";
+import Footer from "../../components/footer/Footer";
+import CustomButton from "../../components/CustomButton";
+import Line from "../../components/Line";
 import { imageLinks } from "../../assets/imageLinks";
 import { Link } from "react-router-dom";
 

@@ -1,8 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import CustomButton from "../../components/customButton";
+import CustomButton from "../../components/CustomButton";
 import { Link } from "react-router-dom";
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/slider/HomeSlider";
 
 import {
    dvr_hero_pp_,
@@ -13,7 +13,7 @@ import {
    Lyft_Night_Shot_Desktop,
    Lyft_Night_Shot_Mobile,
    Ride_Challenge,
-} from "../../images/images";
+} from "../../Images/Images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 
@@ -123,6 +123,7 @@ const Driver = () => {
                         <FontAwesomeIcon icon={faArrowRight} />
                      </Link>
                   </div>
+
                   <div className="w-full flex items-center justify-center  md:w-[41.6667%] md:items-start md:justify-end">
                      <img src={HOSPITAL_4677} alt="" />
                   </div>

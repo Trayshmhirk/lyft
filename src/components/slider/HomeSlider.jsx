@@ -3,8 +3,8 @@ import { useRef, useState } from "react";
 import { v4 as uuid } from "uuid";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-import "../../node_modules/slick-carousel/slick/slick.css";
-import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import "../../../node_modules/slick-carousel/slick/slick.css";
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 const testimony = [
@@ -39,7 +39,7 @@ const testimony = [
 ];
 
 // slidesToScroll: 1,
-const Carousel = ({ slidesToShow, isDriver }) => {
+const HomeSlider = ({ slidesToShow, isDriver }) => {
    const [sliderIndex, setSliderIndex] = useState(0);
    const sliderRef = useRef(null);
 
@@ -150,4 +150,4 @@ const Carousel = ({ slidesToShow, isDriver }) => {
    );
 };
 
-export default Carousel;
+export default HomeSlider;

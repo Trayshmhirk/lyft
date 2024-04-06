@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import "../../node_modules/slick-carousel/slick/slick.css";
-import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import "../../../node_modules/slick-carousel/slick/slick.css";
+import "../../../node_modules/slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -32,7 +32,7 @@ const images = [
    },
 ];
 
-const SupportSlide = () => {
+const HomeBusinessSlider = () => {
    const sliderRef = React.useRef(null);
 
    const PrevArrow = () => {
@@ -110,4 +110,4 @@ const SupportSlide = () => {
    );
 };
 
-export default SupportSlide;
+export default HomeBusinessSlider;

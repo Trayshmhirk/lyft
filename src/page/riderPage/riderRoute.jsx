@@ -3,7 +3,7 @@ import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 
 const Rider = lazy(() => import("./rider"));
-const CitiesPage = lazy(() => import("../citiesPage/citiesPage"));
+const CitiesPage = lazy(() => import("../CitiesPage/CitiesPage"));
 const RiderBusinessPage = lazy(
    () => import("./riderBusinessPage/riderBusinessPage")
 );

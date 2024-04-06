@@ -56,7 +56,7 @@
    }
 
    .sub-link.active-sub-link {
-      @apply border-2 border-majorelleBlue;
+      @apply border-b-2 border-majorelleBlue;
    }
 
    .sub-link a {

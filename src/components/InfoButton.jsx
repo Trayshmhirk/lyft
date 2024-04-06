@@ -1,4 +1,4 @@
-import CustomButton from "./customButton";
+import CustomButton from "./CustomButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const InfoButton = ({ btnText, paraText, iconClass, isNotCenter }) => {

@@ -1,3 +1,4 @@
+// Home page
 export const home_pinkpaint_hero =
    "https://images.ctfassets.net/q8mvene1wzq4/1V7KEdm8GVuIRx1fHaCovZ/eafdba3bb2b13c73c0f79f2533a4fb6e/home_pinkpaint_hero.jpg?w=2500&q=60&fm=webp";
 
@@ -19,6 +20,7 @@ export const Lyft_HealthClinic =
 export const Lyft_Business_Pink =
    "https://images.ctfassets.net/q8mvene1wzq4/3WkSLIffcV7OYpUgMpBwJ7/6951147bed1e0844f7eeeb9785cf84ba/Lyft_Business_Pink.svg?w=&q=60&fm=";
 
+// Driver page
 export const dvr_hero_pp_ =
    "https://images.ctfassets.net/q8mvene1wzq4/2U9CYHaJUPoUS5s00qjNh8/a7626e178402e61484b777918e1407b3/dvr_hero_pp_V2.jpg?w=2500&q=60&fm=webp";
 
@@ -37,6 +39,46 @@ export const dvr_pgr_pp =
 export const how_start =
    "https://images.ctfassets.net/q8mvene1wzq4/1LcqhIzCooJMH3od9Q6KWd/9ceaf0868113fcb9e9fd017f6524584f/how_start.svg?w=1500&q=60&fm=";
 
+export const Lyft_Night_Shot_Desktop =
+   "https://images.ctfassets.net/q8mvene1wzq4/68C55zDYWdqWrNHec9lYDW/9e00cff4e8ec164cb798cdbd67bc2d94/Lyft_Night_Shot_Desktop.jpg?w=2500&q=75&fm=webp";
+
+export const Lyft_Night_Shot_Mobile =
+   "https://images.ctfassets.net/q8mvene1wzq4/5bdhhrAEPWVAn6lnUNRXmq/395b5ec79c6c26afbb652e34cd7c8f79/Lyft_Night_Shot_Mobile.jpg?w=1400&q=75&fm=webp";
+
+// Earnings page
+export const Hero_Desktop =
+   "https://images.ctfassets.net/q8mvene1wzq4/4MmNt4ezgZ0zEjtS5yN6nM/25dcb0ed40d7d2b1af9da62a5b30aa8f/Hero_Desktop.jpg?w=2500&q=60&fm=webp";
+
+export const Hero_Mobile_v2 =
+   "https://images.ctfassets.net/q8mvene1wzq4/2IvVnzk0PvFo6olEwFambc/9e3b586a8d5b8d856675d9d5ec0a8ad4/Hero_Mobile_v2.jpg?w=1000&q=60&fm=webp";
+
+export const NewEarningsMessaging_Desktop_UpfrontPay =
+   "https://images.ctfassets.net/q8mvene1wzq4/3jdMphRKRbpGfaefZVegIy/db1ec5ed77cdc69c9fe26b69119b5d6d/NewEarningsMessaging_Desktop_UpfrontPay_UI_EN.png?w=1500&q=60&fm=webp";
+
+export const NewEarningsMessaging_Desktop_UI_Earnings =
+   "https://images.ctfassets.net/q8mvene1wzq4/6BRbmy1pgwinIl46jj9ljc/2af5bbf804475fda1d88aff363bb193d/NewEarningsMessaging_Desktop_UI_Earnings_Release_EN_cyan.gif?w=1500&q=80&fm=webp";
+
+export const NewEarningsMessaging_Desktop_Turbo =
+   "https://images.ctfassets.net/q8mvene1wzq4/1xrBB09mYjn05lwHampN01/6e161efd392233c02e04ba3781ae8309/NewEarningsMessaging_Desktop_Turbo_UI_EN.png?w=1500&q=60&fm=webp";
+
+export const NewEarningsMessaging_Desktop_Bonus_Hours =
+   "https://images.ctfassets.net/q8mvene1wzq4/4VaR5kz2vwonrOqCo1eeHG/924c9163554b18b621274421fcaa5bdc/NewEarningsMessaging_Desktop_Bonus_Hours_UI_EN.png?w=1500&q=60&fm=webp";
+
+export const NewEarningsMessaging_Desktop_Ride_Challenges =
+   "https://images.ctfassets.net/q8mvene1wzq4/1sa1hoVs8cudlm0ZHbXfo4/b2bb46fcad4d85e26b790776bd939826/NewEarningsMessaging_Desktop_Ride_Challenges_UI_EN.png?w=1500&q=60&fm=webp";
+
+export const NewEarningsMessaging_Desktop_Bonus_Zone =
+   "https://images.ctfassets.net/q8mvene1wzq4/5Qr13UhrbaRYfNcrTCUnQU/5a5918cee5fee42ce4df4bbb9838ab60/NewEarningsMessaging_Desktop_Bonus_Zone_UI_EN.png?w=1500&q=60&fm=webp";
+
+export const Full_Width_Image_Desktop =
+   "https://images.ctfassets.net/q8mvene1wzq4/QGbj9ecWlCI4YZiSW02eW/7174e77eddb1157516ca544cc65c1602/Full_Width_Image_Desktop__1_.png?w=2500&q=75&fm=webp";
+
+export const Mobile_Background =
+   "https://images.ctfassets.net/q8mvene1wzq4/3GAREbf8oEXTjrdMR2BLVv/296cbfccb0badb464040f167f6a0ebfe/Mobile_Background.png?w=1400&q=75&fm=webp";
+
+//
+
+// Rider page
 export const rider_pinkpaint_schedule =
    "https://images.ctfassets.net/q8mvene1wzq4/10jbxXRvdFq7vRaOzXWNyi/658563332042fe4e5ec83634306d376a/rider_pinkpaint_schedule_V2.jpg?w=1500&q=60&fm=webp";
 
@@ -120,10 +162,3 @@ export const preorderRide =
 
 export const takeCare =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/takeCare.384d02b1.svg";
-
-// driver page images
-export const Lyft_Night_Shot_Desktop =
-   "https://images.ctfassets.net/q8mvene1wzq4/68C55zDYWdqWrNHec9lYDW/9e00cff4e8ec164cb798cdbd67bc2d94/Lyft_Night_Shot_Desktop.jpg?w=2500&q=75&fm=webp";
-
-export const Lyft_Night_Shot_Mobile =
-   "https://images.ctfassets.net/q8mvene1wzq4/5bdhhrAEPWVAn6lnUNRXmq/395b5ec79c6c26afbb652e34cd7c8f79/Lyft_Night_Shot_Mobile.jpg?w=1400&q=75&fm=webp";

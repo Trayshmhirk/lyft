@@ -1,6 +1,6 @@
 // import React from 'react'
-import CustomButton from "./customButton";
-import Line from "./line";
+import CustomButton from "./CustomButton";
+import Line from "./Line";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLyft } from "@fortawesome/free-brands-svg-icons";
@@ -44,7 +44,7 @@ const Header = ({
                            isPurpleBtn
                            isHome
                            className={
-                              "h-[32px] min-w-[100px] px-4 sm:h-12 sm:w-[138px]"
+                              "h-8 min-w-[100px] px-4 sm:h-12 sm:w-[138px]"
                            }
                         >
                            Get a ride
@@ -65,7 +65,7 @@ const Header = ({
                            </Link>
                            <div className="h-full w-full flex items-center gap-6">
                               <Link
-                                 className={`sub-link ${isEarning ? "active-sub-link" : ""}`}
+                                 className="sub-link"
                                  to={"/driver/earnings"}
                               >
                                  Earnings
@@ -81,7 +81,11 @@ const Header = ({
                               </Link>
 
                               {isEarning && (
-                                 <CustomButton isPurpleBtn>
+                                 <CustomButton
+                                    isPurpleBtn
+                                    isEarning
+                                    className={"h-8 px-4"}
+                                 >
                                     Become a driver
                                  </CustomButton>
                               )}

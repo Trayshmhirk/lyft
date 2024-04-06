@@ -28,6 +28,8 @@ export default {
             culturedGray: "#F4F4FA",
             darkElectricBlue: "#63637B",
             aeroBlue: "#D1FFEE",
+            ultramarineBlue: "#4B73FF",
+            bubbles: "#E7F6FF",
          },
       },
    },

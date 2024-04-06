@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-const BusinessPage = lazy(() => import("./businessPage"));
+const BusinessPage = lazy(() => import("./BusinessPage"));
 
 const BusinessPageRoute = () => {
    return (

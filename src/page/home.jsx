@@ -1,8 +1,9 @@
 import InfoList from "../components/InfoList";
-import Carousel from "../components/Carousel";
-import CardSlider from "../components/CardSlider";
+import HomeSlider from "../components/slider/HomeSlider";
+import CardSlider from "../components/slider/CardSlider";
 import InfoButton from "../components/InfoButton";
-import CustomButton from "../components/customButton";
+import CustomButton from "../components/CustomButton";
+import HomeBusinessSlider from "../components/slider/HomeBusinessSlider";
 import { Link } from "react-router-dom";
 import {
    home_pinkpaint_hero,
@@ -14,7 +15,7 @@ import {
    home_pinkpaint_safety,
    Lyft_HealthClinic,
    Lyft_Business_Pink,
-} from "../images/images";
+} from "../Images/Images";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
    faCalendar,
@@ -31,7 +32,6 @@ import {
    faShieldHalved,
    faUtensils,
 } from "@fortawesome/free-solid-svg-icons";
-import SupportSlide from "../components/SupportSlide";
 
 const HomePage = () => {
    return (
@@ -111,7 +111,7 @@ const HomePage = () => {
                   </div>
                </div>
 
-               <Carousel slidesToShow={3} />
+               <HomeSlider slidesToShow={3} />
             </div>
          </section>
 
@@ -387,7 +387,7 @@ const HomePage = () => {
             {/*  */}
             <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
                <div className="w-full flex flex-col sm:w-[83.333%] sm:self-center sm:mx-auto">
-                  <SupportSlide />
+                  <HomeBusinessSlider />
                </div>
             </div>
          </section>

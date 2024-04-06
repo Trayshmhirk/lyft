@@ -1,12 +1,12 @@
 // import React from 'react'
 import { useState } from "react";
-import CustomButton from "./customButton";
+import CustomButton from "./CustomButton";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import { MdGTranslate } from "react-icons/md";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
-import HorizontalLine from "./horizontalLine";
+import HorizontalLine from "./HorizontalLine";
 import {
    faFacebook,
    faInstagram,

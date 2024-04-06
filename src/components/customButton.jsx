@@ -6,6 +6,7 @@ const CustomButton = ({
    isPurpleBtn,
    isNoBorderBtn,
    isFooterBtn,
+   isEarning,
    className,
    isHome,
 }) => {
@@ -27,7 +28,11 @@ const CustomButton = ({
             <span className="text-base font-bold">{children}</span>
          ) : (
             <span
-               className={`${isHome ? "text-base lg:text-xl-4" : "text-xl"} font-bold`}
+               className={`
+                  font-bold
+                  ${isEarning ? "text-base" : "text-xl"}
+                  ${isHome ? "text-base lg:text-xl-4" : ""} 
+               `}
             >
                {children}
             </span>
