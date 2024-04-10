@@ -173,8 +173,6 @@ const EarningsToolSlider = () => {
             </div>
          </div>
 
-         {/* <Slider ref={sliderRef} {...sliderSettings} className=""></Slider> */}
-
          <div className="flex justify-center items-center gap-6">
             <PrevArrow />
             <div className="flex gap-3">{renderDots()}</div>

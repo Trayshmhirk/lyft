@@ -37,12 +37,8 @@ const Footer = () => {
 
    return (
       <footer className="flex justify-center bg-white md:py-8">
-         <div
-            className={`footer-container max-w-[1280px] w-full flex flex-col gap-8 px-4 pb-4 md:pt-8 md:px-12 md:pb-0 lg:gap-2 lg:px-20 xl:px-28`}
-         >
-            <div
-               className={`flex flex-col md:gap-4 md:flex-row md:justify-between`}
-            >
+         <div className="max-w-[1280px] w-full flex flex-col gap-8 px-4 pb-4 md:pt-8 md:px-12 md:pb-0 lg:gap-2 lg:px-20 xl:px-28">
+            <div className="flex flex-col md:gap-4 md:flex-row md:justify-between">
                {/* DRIVER */}
                <div className="pr-4 md:p-0">
                   <div className="hidden w-[230px] flex-col gap-8 md:flex">
@@ -70,7 +66,7 @@ const Footer = () => {
                         className="flex justify-between items-center py-8"
                      >
                         <h2 className="font-bold text-[17px]">Driver</h2>
-                        {toggleRider ? (
+                        {toggleDriver ? (
                            <>
                               <FontAwesomeIcon icon={faAngleUp} />
                            </>

@@ -14,18 +14,72 @@ import {
    NewEarningsMessaging_Desktop_Ride_Challenges,
    NewEarningsMessaging_Desktop_Bonus_Zone,
 } from "../../../Images/Images";
-import { faMobileScreen, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
+import {
+   faAngleDown,
+   faAngleUp,
+   faMobileScreen,
+   faMoneyBill,
+} from "@fortawesome/free-solid-svg-icons";
+import EarningTipsSlider from "../../../components/slider/EarningTipsSlider";
+import HorizontalLine from "../../../components/HorizontalLine";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 const EarningsPage = () => {
+   const [toggleBonusOffered, setToggleBonusOffered] = useState(false);
+   const [toggleBonusesVary, setToggleBonusesVary] = useState(false);
+   const [toggleGetPaid, setToggleGetPaid] = useState(false);
+   const [toggleEarningsFluctuate, setToggleEarningsFluctuate] =
+      useState(false);
+
+   const [toggleTimesToDrive, setToggleTimesToDrive] = useState(false);
+   const [toggleStayingBusy, setToggleStayingBusy] = useState(false);
+   const [toggleEarningsCommitment, setToggleEarningsCommitment] =
+      useState(false);
+
+   const [toggleInsuranceWork, setToggleInsuranceWork] = useState(false);
+
+   const handleToggleBonusOffered = () => {
+      setToggleBonusOffered(!toggleBonusOffered);
+   };
+
+   const handleToggleBonusesVary = () => {
+      setToggleBonusesVary(!toggleBonusesVary);
+   };
+
+   const handleToggleGetPaid = () => {
+      setToggleGetPaid(!toggleGetPaid);
+   };
+
+   const handleToggleEarningsFluctuate = () => {
+      setToggleEarningsFluctuate(!toggleEarningsFluctuate);
+   };
+
+   const handleToggleTimesToDrive = () => {
+      setToggleTimesToDrive(!toggleTimesToDrive);
+   };
+
+   const handleToggleStayingBusy = () => {
+      setToggleStayingBusy(!toggleStayingBusy);
+   };
+
+   const handleToggleEarningsCommitment = () => {
+      setToggleEarningsCommitment(!toggleEarningsCommitment);
+   };
+
+   const handleToggleInsuranceWork = () => {
+      setToggleInsuranceWork(!toggleInsuranceWork);
+   };
+
    return (
       <main className="flex flex-col">
-         <section className="w-full bg-ultramarineBlue text-white">
-            <div className=" h-full flex flex-col justify-center md:flex-row">
+         <section className="w-full bg-ultramarineBlue text-white pt-10 md:pt-0">
+            <div className=" h-full flex flex-col justify-center lg:flex-row">
                <div className="w-full h-full self-center lg:w-[41.6667%] lg:items-center md:pr-4">
-                  <div className="flex flex-col justify-center items-start gap-10 py-4 pr-10 pl-14">
+                  <div className="flex flex-col justify-center items-start gap-10 px-4 pb-12 lg:py-4 lg:pr-10 lg:pl-14">
                      <div className="flex flex-col gap-5">
                         <span className="font-bold">
-                           The Driver&apos;s Guide to Pay
+                           THE DRIVER&apos;S GUIDE TO PAY
                         </span>
                         <h1 className="text-[48px] leading-[54px] font-semibold md:text-[60px] md:leading-[70px] lg:text-[80px] lg:leading-[92px]">
                            Earnings you can count on
@@ -61,13 +115,13 @@ const EarningsPage = () => {
          <section className="py-16 bg-white">
             <div className="max-w-[1280px] w-full mx-auto">
                <div className="flex flex-col items-center gap-12">
-                  <div className="w-full md:w-[83.3333%]">
+                  <div className="w-full md:w-[83.3333%] px-4 md:px-6">
                      <h2 className="text-3xl text-center font-semibold md:text-4xl md:leading-[44px]">
                         How earning works
                      </h2>
                   </div>
 
-                  <div className="max-w-[1280px] w-full h-full mx-auto px-4 flex flex-col gap-5 md:h-[174px] md:flex-row md:justify-center md:items-center md:gap-14 lg:gap-20 xl:gap-28">
+                  <div className="max-w-[1280px] w-full h-full mx-auto px-4 flex flex-col gap-5 md:h-[174px] md:flex-row md:justify-center md:items-center md:px-6 md:gap-14 lg:gap-20 xl:gap-28">
                      <div className="w-full md:w-[33.333%] md:pr-4">
                         <div className="flex flex-col gap-5">
                            <div className="flex items-center gap-5">
@@ -195,7 +249,7 @@ const EarningsPage = () => {
          <section className="py-16 bg-white">
             <div className="flex flex-col items-center gap-12">
                <div className="max-w-[1280px] w-full mx-auto px-4 md:px-6">
-                  <div className="flex flex-col-reverse gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
+                  <div className="flex flex-col gap-10 md:flex-row md:justify-center md:gap-14 lg:gap-20 xl:gap-28">
                      <div className="w-full flex items-center justify-center md:w-[41.6667%] md:items-start md:justify-end md:pr-4">
                         <img
                            src={NewEarningsMessaging_Desktop_UpfrontPay}
@@ -298,7 +352,7 @@ const EarningsPage = () => {
                </div>
 
                {/*  */}
-               <div className="w-full max-w-5xl mt-10 md:w-[83.3333%]">
+               <div className="w-full max-w-5xl mt-10 md:w-[83.3333%] px-4 md:px-6">
                   <p className="text-[13px] text-center md:text-xs">
                      *Upfront pay is not available in Washington state, New York
                      City, Portland, or Toronto. If upfront pay is not available
@@ -335,16 +389,16 @@ const EarningsPage = () => {
                      <div className="flex flex-col gap-6">
                         <img src={NewEarningsMessaging_Desktop_Turbo} alt="" />
 
-                        <div className="flex flex-col gap-6 pb-6">
+                        <div className="flex flex-col text-center gap-6 pb-6 sm:text-center">
                            <p className="text-[26px] leading-[32px] font-bold">
                               Turbo
                            </p>
                            <p>
-                              Earn 10–40% more per ride with Turbo. You’ll see
-                              Turbo times every week during busy times. Just
-                              drive when they’re offered and watch your earnings
-                              stack up. Turbo is available only in select
-                              regions.
+                              Earn 10–40% more per ride with Turbo. You&apos;ll
+                              see Turbo times every week during busy times. Just
+                              drive when they&apos;re offered and watch your
+                              earnings stack up. Turbo is available only in
+                              select regions.
                            </p>
                         </div>
                      </div>
@@ -361,7 +415,7 @@ const EarningsPage = () => {
                            alt=""
                         />
 
-                        <div className="flex flex-col gap-6 pb-6">
+                        <div className="flex flex-col text-center gap-6 pb-6 sm:text-center">
                            <p className="text-[26px] leading-[32px] font-bold">
                               Bonus hours
                            </p>
@@ -384,7 +438,7 @@ const EarningsPage = () => {
                            alt=""
                         />
 
-                        <div className="flex flex-col gap-6 pb-6">
+                        <div className="flex flex-col text-center gap-6 pb-6 sm:text-center">
                            <p className="text-[26px] leading-[32px] font-bold">
                               Ride Challenges
                            </p>
@@ -408,7 +462,7 @@ const EarningsPage = () => {
                            alt=""
                         />
 
-                        <div className="flex flex-col gap-6 pb-6">
+                        <div className="flex flex-col text-center gap-6 sm:text-center md:pb-6">
                            <p className="text-[26px] leading-[32px] font-bold">
                               Bonus Zones
                            </p>
@@ -531,8 +585,8 @@ const EarningsPage = () => {
          </section>
 
          <section className="py-16 bg-white">
-            <div className="section-container flex flex-col self-center gap-5">
-               <div></div>
+            <div className="w-full max-w-5xl mx-auto flex flex-col md:w-[83.3333%] px-4 md:px-6">
+               <EarningTipsSlider />
             </div>
          </section>
 
@@ -547,8 +601,410 @@ const EarningsPage = () => {
          </section>
 
          <section className="py-16 bg-white">
-            <div className="section-container flex flex-col self-center gap-5">
-               <div></div>
+            <div className="max-w-[1280px] w-full flex flex-col mx-auto px-4 md:px-12 lg:px-20 xl:px-28">
+               <div className="flex flex-col">
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleBonusOffered}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              When are bonuses offered?
+                           </h2>
+                           {toggleBonusOffered ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleBonusOffered && (
+                           <p className="w-full md:w-[78.6667%]">
+                              Bonuses are typically offered at the busiest times
+                              and in the busiest places, like during weekday
+                              commute hours, or after a concert. That way, there
+                              will likely be enough drivers on the road when
+                              passengers need rides.
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleBonusesVary}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              Why do bonuses vary over time?
+                           </h2>
+                           {toggleBonusesVary ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleBonusesVary && (
+                           <p className="w-full flex flex-col gap-5 md:w-[78.6667%]">
+                              <span className="">
+                                 Bonuses vary for a variety of reasons.
+                              </span>
+
+                              <ul className="pl-10">
+                                 <li className="list-disc">
+                                    Bonuses are usually offered during busy
+                                    times and places. Those times and places may
+                                    change from week to week.
+                                 </li>
+                                 <li className="list-disc">
+                                    Bonuses are offered to help balance the
+                                    number of drivers on the road with the
+                                    demand for rides. If the number of drivers
+                                    or riders changes, bonus offers may vary as
+                                    a result.
+                                 </li>
+                                 <li className="list-disc">
+                                    Bonuses are offered to encourage more
+                                    drivers to hit the road, so bonuses may vary
+                                    based on expected driver availability. Not
+                                    all bonuses are offered to all drivers.
+                                 </li>
+                              </ul>
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleGetPaid}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              When do I get paid?
+                           </h2>
+                           {toggleGetPaid ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleGetPaid && (
+                           <p className="w-full md:w-[78.6667%]">
+                              There are a few ways to get paid with Lyft: Direct
+                              Pay, Express Pay, and Weekly Pay. With the{" "}
+                              <Link className="link-underline">
+                                 Lyft Direct debit card
+                              </Link>
+                              , you can use Direct Pay to get paid instantly
+                              after each ride. In nearly all states, when you
+                              use Express Pay, you&apos;ll pay a $0.85 fee to
+                              have your earnings transferred to your account
+                              within a short time. And with Weekly Pay, your
+                              earnings are transferred into your account every
+                              Tuesday morning, arriving within two business
+                              days.
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleEarningsFluctuate}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              Why do my earnings fluctuate?
+                           </h2>
+                           {toggleEarningsFluctuate ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleEarningsFluctuate && (
+                           <p className="w-full flex flex-col gap-5 md:w-[78.6667%]">
+                              <span className="">
+                                 Many factors can impact earnings, including:
+                              </span>
+
+                              <ul className="pl-10">
+                                 <li className="list-disc">
+                                    The number of rides you give
+                                 </li>
+                                 <li className="list-disc">
+                                    How many drivers are on the road
+                                 </li>
+                                 <li className="list-disc">
+                                    The number of passengers requesting rides
+                                 </li>
+                                 <li className="list-disc">
+                                    The time and distance of each ride
+                                 </li>
+                                 <li className="list-disc">
+                                    What bonuses are available
+                                 </li>
+                              </ul>
+
+                              <span>
+                                 The Driver app has tools to help make the most
+                                 of your time on the road. For example, you can
+                                 use the weekly planner to get guidance on the
+                                 best times and places to drive. And you can
+                                 take advantage of scheduled rides to lock in
+                                 rides that fit with your driving plans.
+                              </span>
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleTimesToDrive}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              When are the busiest times to drive?
+                           </h2>
+                           {toggleTimesToDrive ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleTimesToDrive && (
+                           <p className="w-full md:w-[78.6667%]">
+                              The busiest times to drive are usually happy hour,
+                              rush hour, and evening weekend hours. Holidays
+                              like St. Patrick&apos;s Day, Halloween, and New
+                              Year&apos;s Eve are usually busy, too. Your Lyft
+                              Driver app shows you the best times to earn each
+                              week, and where riders are requesting rides.
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleStayingBusy}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              What does staying busy mean?
+                           </h2>
+                           {toggleStayingBusy ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleStayingBusy && (
+                           <p className="w-full md:w-[78.6667%]">
+                              Staying busy means maximizing the time you are
+                              booked with riders and minimizing the downtime in
+                              between ride requests. Staying busy is important
+                              because the more time you are booked with riders,
+                              the more opportunities you have to earn. In
+                              addition to driving during the busiest times and
+                              in the busiest places, a great strategy to stay
+                              busy is to accept more rides, rather than being
+                              selective about the rides you accept. Drivers who
+                              accept more rides tend to earn more overall.
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleEarningsCommitment}
+                           className="flex justify-between items-center pt-12 gap-10 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              How does the 70% earnings commitment work?
+                           </h2>
+                           {toggleEarningsCommitment ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleEarningsCommitment && (
+                           <p className="w-full md:w-[78.6667%]">
+                              Rider payments go toward more than just your
+                              earnings and Lyft. They also cover external fees
+                              like commercial insurance and taxes. With our
+                              earnings commitment, you&apos;ll always earn 70%
+                              or more of rider payments after external fees,
+                              each week—guaranteed. If your weekly earnings are
+                              ever below 70%, you&apos;ll get paid the
+                              difference. You can track your earnings in your
+                              weekly earnings breakdown as soon as you give your
+                              first ride of the week. Get{" "}
+                              <Link className="link-underline">
+                                 more details
+                              </Link>{" "}
+                              about our earnings commitment.
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+
+                  {/*  */}
+                  <div className="w-full">
+                     <div className="flex flex-col gap-6">
+                        <button
+                           onClick={handleToggleInsuranceWork}
+                           className="flex justify-between items-center gap-10 pt-12 text-start"
+                        >
+                           <h2 className="font-bold text-[26px] leading-8">
+                              How does insurance work?
+                           </h2>
+                           {toggleInsuranceWork ? (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleUp}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           ) : (
+                              <>
+                                 <FontAwesomeIcon
+                                    icon={faAngleDown}
+                                    className="w-6 h-6 font-light"
+                                 />
+                              </>
+                           )}
+                        </button>
+                        {toggleInsuranceWork && (
+                           <p className="w-full md:w-[78.6667%]">
+                              You&apos;re required to maintain personal auto
+                              insurance that meets minimum state requirements.
+                              However, most personal auto policies will not
+                              cover you while you&apos;re using the Lyft app.
+                              Where consistent with state and local laws, Lyft
+                              maintains commercial insurance on behalf of
+                              drivers. This commercial insurance provides
+                              certain coverages while you&apos;re using the Lyft
+                              app.{" "}
+                              <Link className="link-underline">
+                                 Learn more.
+                              </Link>
+                           </p>
+                        )}
+                     </div>
+                  </div>
+
+                  <HorizontalLine className={"mt-12"} />
+               </div>
+
+               <div className="mt-16">
+                  <span className="text-[13px] md:text-xs">
+                     **Extra pay for wait time on scheduled rides is available
+                     in most major cities in the US, with plans to expand to
+                     more this year.
+                  </span>
+               </div>
             </div>
          </section>
       </main>

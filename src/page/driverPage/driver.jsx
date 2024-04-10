@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import CustomButton from "../../components/CustomButton";
 import { Link } from "react-router-dom";
-import Carousel from "../../components/slider/HomeSlider";
+import HomeSlider from "../../components/slider/HomeSlider";
 
 import {
    dvr_hero_pp_,
@@ -255,8 +255,8 @@ const Driver = () => {
          </section>
 
          <section className="relative py-16 bg-aeroBlue">
-            <div className="max-w-[1280px] w-full mx-auto px-4 flex flex-col gap-12 md:px-6">
-               <Carousel slidesToShow={1} isDriver />
+            <div className="max-w-[1280px] w-full mx-auto px-4 flex flex-col md:px-6">
+               <HomeSlider slidesToShow={1} isDriver />
             </div>
          </section>
       </main>
