@@ -20,10 +20,13 @@ const Header = ({
    return (
       <header className="w-full h-[81px] flex justify-center border-b border-gainsboro">
          <div className="max-w-[1280px] w-full mx-auto px-4 flex justify-between items-center gap-10 md:px-6">
-            <span className="font-bold text-shockingPink cursor-pointer hover:text-cetaceanBlue">
+            <Link
+               to="/"
+               className="font-bold text-shockingPink cursor-pointer hover:text-cetaceanBlue"
+            >
                <FontAwesomeIcon icon={faLyft} className="w-16 text-[52px]" />{" "}
                {isBusiness && "business"}
-            </span>
+            </Link>
 
             <nav
                className={`
@@ -152,7 +155,7 @@ const Header = ({
                                  <MdGTranslate className="text-xl" /> {"EN"}
                               </Link>
 
-                              <ul className="translate hidden absolute top-[50px] right-0 max-h-[280px] w-[300px] bg-white rounded-xl mt-2 overflow-y-hidden overflow-x-auto">
+                              <ul className="dropdown-shadow hidden absolute top-[50px] right-0 max-h-[280px] w-[300px] bg-white rounded-xl mt-2 overflow-y-hidden overflow-x-auto">
                                  <li className="hover:bg-platinum">
                                     <div className="w-full min-h-14 flex items-center justify-between px-4 py-3 cursor-pointer">
                                        <p className="font-medium">

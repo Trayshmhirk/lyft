@@ -65,7 +65,7 @@ const CardSlider = () => {
                            className="sm:w-[122px] sm:h-[96px]"
                         />
                      </div>
-                     <p className="text-sm font-medium">
+                     <p className="text-sm font-medium text-[#0c0b31b3]">
                         <span className="inline-block align-middle leading-5"></span>{" "}
                         {info.extra1}
                         <br />

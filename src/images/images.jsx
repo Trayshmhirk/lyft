@@ -31,7 +31,7 @@ export const GenericPhone_11 =
    "https://cdn.lyft.com/lyftcomfe/_next/static/media/GenericPhone_11.c7bd81d3.png";
 
 export const Ride_Challenge =
-   "https://images.ctfassets.net/q8mvene1wzq4/2R8Y7rj79sKgIePkDADjIa/c02b88b26568c665cd5f9ec45816c1ee/Ride-Challenge-02_2x.png?w=700&q=75";
+   "https://images.ctfassets.net/q8mvene1wzq4/2aiGhaJcffjVESDkC6yj0X/7e5fd0d7cd83f8bb4379237e4c084bfe/bonuses.png?w=700&q=75";
 
 export const dvr_pgr_pp =
    "https://images.ctfassets.net/q8mvene1wzq4/14j1VooOckKD3p29hMHlaz/55206618a33b79c121968f9e8eb68ab8/dvr_pgr_pp.jpg";

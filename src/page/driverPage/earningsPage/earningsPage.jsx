@@ -123,7 +123,7 @@ const EarningsPage = () => {
 
                   <div className="max-w-[1280px] w-full h-full mx-auto px-4 flex flex-col gap-5 md:h-[174px] md:flex-row md:justify-center md:items-center md:px-6 md:gap-14 lg:gap-20 xl:gap-28">
                      <div className="w-full md:w-[33.333%] md:pr-4">
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-8">
                            <div className="flex items-center gap-5">
                               <span>
                                  <svg
@@ -140,12 +140,13 @@ const EarningsPage = () => {
                               </span>
                               <div>
                                  <p className="text-xl font-bold">
-                                    <Link className="link-underline">
+                                    <Link className="link-underline text-[26px]">
                                        Get transparent earnings on every ride
                                     </Link>
                                  </p>
                               </div>
                            </div>
+
                            <div className="flex items-center gap-5">
                               <span>
                                  <svg
@@ -163,7 +164,7 @@ const EarningsPage = () => {
                               </span>
                               <div>
                                  <p className="text-xl font-bold">
-                                    <Link className="link-underline">
+                                    <Link className="link-underline text-[26px]">
                                        Use tools to help you stay busy
                                     </Link>
                                  </p>
@@ -177,7 +178,7 @@ const EarningsPage = () => {
                      </div>
 
                      <div className="w-full md:w-[33.333%] md:pr-4">
-                        <div className="flex flex-col gap-5">
+                        <div className="flex flex-col gap-8">
                            <div className="flex items-center gap-5">
                               <span>
                                  <svg
@@ -195,12 +196,13 @@ const EarningsPage = () => {
                               </span>
                               <div>
                                  <p className="text-xl font-bold">
-                                    <Link className="link-underline">
+                                    <Link className="link-underline text-[26px]">
                                        Earn bonuses to reach your goals faster
                                     </Link>
                                  </p>
                               </div>
                            </div>
+
                            <div className="flex items-center gap-5">
                               <span>
                                  <svg
@@ -217,7 +219,7 @@ const EarningsPage = () => {
                               </span>
                               <div>
                                  <p className="text-xl font-bold">
-                                    <Link className="link-underline">
+                                    <Link className="link-underline text-[26px]">
                                        Keep 100% of your tips
                                     </Link>
                                  </p>

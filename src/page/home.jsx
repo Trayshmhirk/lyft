@@ -126,7 +126,7 @@ const HomePage = () => {
 
                         <div className="flex flex-col gap-6">
                            <h2 className="text-3xl font-semibold md:text-4xl md:leading-[44px]">
-                              Ready, set, go in just a few quick taps
+                              Ready, set, go <br /> in just a few quick taps
                            </h2>
                            <p className="">
                               No matter your destination, we&apos;ll get you
