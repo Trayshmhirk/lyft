@@ -5,6 +5,7 @@ import DriverRoute from "./page/driverPage/DriverRoute";
 import RiderRoute from "./page/riderPage/RiderRoute";
 import BusinessPageRoute from "./page/BusinessPage/BusinessPageRoute";
 import Layout from "./page/Layout";
+import RideWithLyft from "./components/RideWithLyft";
 
 const Home = lazy(() => import("./page/Home"));
 
@@ -23,6 +24,14 @@ const Router = () => {
             <Route path="driver/*" element={<DriverRoute />} />
             <Route path="rider/*" element={<RiderRoute />} />
             <Route path="business/*" element={<BusinessPageRoute />} />
+            <Route
+               path="ride-with-lyft"
+               element={
+                  <Layout>
+                     <RideWithLyft />
+                  </Layout>
+               }
+            />
          </Routes>
       </Suspense>
    );

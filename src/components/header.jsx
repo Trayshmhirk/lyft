@@ -42,7 +42,7 @@ const Header = ({
                   `}
                >
                   {isHome && (
-                     <div className="">
+                     <Link to="/ride-with-lyft" className="">
                         <CustomButton
                            isPurpleBtn
                            isHome
@@ -52,7 +52,7 @@ const Header = ({
                         >
                            Get a ride
                         </CustomButton>
-                     </div>
+                     </Link>
                   )}
 
                   <span className="block lg:hidden">

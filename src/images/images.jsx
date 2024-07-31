@@ -162,3 +162,7 @@ export const preorderRide =
 
 export const takeCare =
    "https://cdn.lyft.com/businesstravelriderfe/_next/static/media/takeCare.384d02b1.svg";
+
+// ride with lyft
+export const riderInteractingWithPhone =
+   "https://images.ctfassets.net/q8mvene1wzq4/3SgRqYAtunTM59HKcPuKTc/eba3838b5fc9e2a7ce7c498ea3022d6c/core_riderInteractingWithPhone.svg?w=2500&q=60&fm=";
